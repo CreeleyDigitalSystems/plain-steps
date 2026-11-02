@@ -1,5 +1,13 @@
 # Changes
 
+## 0.2.1 — outcome repair, 3 November 2026
+
+- Removed maintainer-only fictional evaluations and baseline comparisons from everyday app-building instructions. The agent verifies the person's requested artifact.
+- Relevance questions and complaints during unfinished work now explicitly lead to the next authorised action; an explanation alone is insufficient when a repair can be made.
+- Preserved explicit pause, stop, switch and explain-only boundaries. No global hook, profile or permissions change.
+
+See [Verification](docs/VERIFICATION.md) for execution evidence and limits.
+
 ## 0.2.0 — experimental, 3 November 2026
 
 Implemented:

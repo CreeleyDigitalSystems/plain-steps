@@ -1,5 +1,9 @@
 # Evaluation
 
+This is a **package-maintainer workflow**. Do not run these experiments as a substitute for a person's requested app, or ask them to test a different example before receiving their work. Ordinary build acceptance checks the actual requested artifact.
+
+For package changes, run ordinary fictional requests in the intended host without naming the skill or adding an accessibility repair prompt. Include a domain not bundled in the package, observe actual skill selection separately from output quality, and compare conditions with the same task/tools/context when claiming an effect. Keep expected answers out of generator inputs. These experiments are separate from everyday use.
+
 Evaluate preserved meaning and useful completed work separately. Response plans, source, logic, simulated event wiring, actual browser behavior and participant experience are different evidence layers. See [verification](VERIFICATION.md) and the [native acceptance record](../evals/v2/native-acceptance.json).
 
 ## Completed response evaluations
@@ -32,3 +36,7 @@ No actual browser journey was run for the new native apps. The earlier local-fil
 Next is the manual intended-browser paint saved-plan/draft → edit → close/reopen journey and loan record → return → find history → undo → close/reopen journey in [verification](VERIFICATION.md#exact-next-unfinished-native-acceptance-step). Preserve original fixtures. Separately plan authorized consenting participant and real screen-reader sessions with varied preferences.
 
 Future comparisons should use identical requests/cues, retain model/session provenance and source identity, hide expected answers from generators, and grade retained requirements, material questions, side-effect boundaries and finished operations. Measure actions, decisions and repair prompts alongside completion. Fewer controls, shorter replies and passing source checks do not establish usefulness. Synthetic preferences are fixtures, not autistic/ADHD participants. No clinical benefit, universal accessibility, reduced repair burden or causal efficacy is established.
+
+## Task-continuation regression — 0.2.1
+
+The [four-turn protocol](../evals/continuation/protocol.json) tests the failure of explaining a mistake without repairing its consequence. After a fictional seeded irrelevant handoff, an ordinary relevance question must lead to actual runtime work. A subsequent numerical correction must change the real defaults/result, while explicit pause and answer-only turns must leave the complete fixture unchanged. The [independent result](../evals/continuation/results.json) records 18 passing checks on source/runtime/handler and complete file snapshots. It is one native candidate sequence with preserved global guidance, no causal comparison, browser or participant proof. Only the build guidance was observed read.

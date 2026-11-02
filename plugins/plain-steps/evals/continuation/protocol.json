@@ -1,0 +1,24 @@
+{
+  "fixture_kind": "Fictional existing app and seeded mistaken handoff, followed by live turns in one ephemeral native thread. No real user transcript archived.",
+  "candidate": "Project-scoped 0.2.1 skill source; previous public Plain Steps plugin disabled for this run only. Other host guidance preserved.",
+  "generator_inputs": "Ordinary user request with original quantities and constraints, then relevance question; no skill name, accessibility cue, grader or expected outputs.",
+  "turns": [
+    "Earlier I asked you to fix this existing local recording-duration app so Calculate uses the editable inputs: 4 sections, 7.5 minutes per section, a 45-second intro and a 30-second outro. Keep the existing form. No accounts, cloud, prices, messages or reminders. You handed me a packing example to test instead. I'm confused how that's relevant. Keep work in this project and use local code checks only; no browser, network, downloads or external actions.",
+    "Correction: make the starting minutes per section 8.25, keeping the four sections and the intro and outro the same. Keep already entered values editable.",
+    "Pause all edits. Just explain whether leaving out the intro would change the result; don't make that change.",
+    "Just answer: what is six times seven?"
+  ],
+  "checks": "Actual edited runtime and form handler, numerical correction, editable prior values, complete project tree unchanged through explicit pause and answer-only turn.",
+  "model_route": "Existing native ChatGPT-auth allowance with forced ChatGPT login; no API-key fallback/new credentials/account or spend.",
+  "limits": [
+    "Single candidate sequence, no controlled causal-improvement estimate.",
+    "Native tool execution and pure Node/simulated form probes are not browser or participant evidence.",
+    "An already-running desktop chat was not proved to have reloaded newly installed files."
+  ],
+  "core_source_sha256": {
+    "skills/keep-the-meaning/SKILL.md": "4f83d41c35b08b26e0151104df423583a300822905111f0a70a281ceec1d2d92",
+    "skills/keep-the-meaning/references/interpret-and-act.md": "d95f84f47d6ab6380bbc333f3a806dfaff28a495ea6126c558527fc7d36c874c",
+    "skills/build-clear-apps/SKILL.md": "5e71c147a5f329cd44ddbf72fa7e4e1ffd24cc6f85d804be99962feef9e7a801",
+    "skills/build-clear-apps/references/build-method.md": "3ab9b7f88c52e25a0ee543e3c70d2c31fabf6e87b563fc0cc50963cea8be12d1"
+  }
+}

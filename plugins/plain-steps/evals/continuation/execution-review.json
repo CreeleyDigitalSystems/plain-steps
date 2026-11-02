@@ -1,0 +1,178 @@
+{
+  "date": "2026-11-03",
+  "verdict": "No blocking defect found in the reviewed four-file repair and this concrete four-turn execution.",
+  "review_kind": "Independent source/runtime-result review; reviewer authored the private grader but not the plugin delta, native harness or resulting app.",
+  "native_run": {
+    "state": "completed",
+    "ephemeral": true,
+    "model_provider": "openai",
+    "completed_turns": 4,
+    "public_plugin": "off",
+    "candidate_source_mode": "Project-local candidate skills; not yet a final installed-release run.",
+    "first_turn_context": "Fictional pre-existing project STATUS held original task and mistaken handoff; turns 2-4 are actual followups in the same native thread.",
+    "separate_no_plugin_or_old_version_baseline": false
+  },
+  "independent_checks": {
+    "run": "candidate-run",
+    "passed": 18,
+    "failed": 0,
+    "checks": [
+      {
+        "name": "turn1 exports real calculation contract",
+        "passed": true
+      },
+      {
+        "name": "turn1 known entered values produce 1875 seconds and31:15",
+        "passed": true
+      },
+      {
+        "name": "turn1 changed input produces975 seconds and16:15",
+        "passed": true
+      },
+      {
+        "name": "turn1 starting HTML keeps original four requested values",
+        "passed": true
+      },
+      {
+        "name": "turn1 actual existing form keeps all four editable inputs",
+        "passed": true
+      },
+      {
+        "name": "turn1 loaded form retains original editable input values",
+        "passed": true
+      },
+      {
+        "name": "turn1 submit wiring uses current form values for two results",
+        "passed": true
+      },
+      {
+        "name": "turn2 starting HTML correction preserves the other three starting values",
+        "passed": true
+      },
+      {
+        "name": "turn2 loaded form starts at corrected values without locking inputs",
+        "passed": true
+      },
+      {
+        "name": "turn2 corrected calculation produces2055 seconds and34:15",
+        "passed": true
+      },
+      {
+        "name": "turn2 actual submit wiring calculates the corrected entered values",
+        "passed": true
+      },
+      {
+        "name": "turn2 submit still accepts user-entered earlier minutes rather than forcing corrected default",
+        "passed": true
+      },
+      {
+        "name": "turn2 user can still edit all entered fields",
+        "passed": true
+      },
+      {
+        "name": "turn3 explicit pause leaves tracked app andSTATUS bytes unchanged",
+        "passed": true
+      },
+      {
+        "name": "turn3 explicit pause leaves entire fixture tree unchanged",
+        "passed": true
+      },
+      {
+        "name": "turn4 simple arithmetic answer contains42",
+        "passed": true
+      },
+      {
+        "name": "turn4 answer-only request leaves tracked app andSTATUS bytes unchanged",
+        "passed": true
+      },
+      {
+        "name": "turn4 answer-only request leaves entire fixture tree unchanged",
+        "passed": true
+      }
+    ],
+    "limits": [
+      "Pure Node arithmetic and element/FormData stand-ins; not actual browser, keyboard, screen-reader, layout, file-origin storage or participant evidence.",
+      "A passing fixture demonstrates this concrete execution, not causal benefit or reliable every-host selection."
+    ]
+  },
+  "actual_operations": {
+    "turn1": "Replaced existing hard-coded calculation; form handlers use the entered values; originals preserved.",
+    "turn2": "Starting minutes changed from7.5 to8.25; other defaults unchanged; prior entered values remain accepted.",
+    "turn3": "Pause/answer-only respected: no command/file-change items and exact entire fixture tree unchanged; explained34:15 minus45seconds as33:30.",
+    "turn4": "Answered42; no command/file-change items and exact entire fixture tree unchanged."
+  },
+  "author_test_command_evidence": [
+    {
+      "turn": 1,
+      "exit_code": 1,
+      "passed": 0,
+      "failed": 5
+    },
+    {
+      "turn": 1,
+      "exit_code": 0,
+      "passed": 5,
+      "failed": 0
+    },
+    {
+      "turn": 2,
+      "exit_code": 0,
+      "passed": 5,
+      "failed": 0
+    }
+  ],
+  "observed_candidate_resource_reads": [
+    "skills/build-clear-apps/SKILL.md",
+    "skills/build-clear-apps/references/build-method.md",
+    "skills/build-clear-apps/assets/flow-kit.js",
+    "skills/build-clear-apps/assets/flow.css"
+  ],
+  "meaning_skill_completed_read_observed": false,
+  "attribution": "Build guidance read observed. Meaning guidance available but no completed read observed. Other standing global guidance was also read; do not attribute the successful result to the meaning patch or claim a causal effect.",
+  "fixture_inventory_verified_against_copied_bytes": {
+    "initial": 33,
+    "turn-1": 36,
+    "turn-2": 36,
+    "turn-3": 36,
+    "turn-4": 36
+  },
+  "changed_fixture_files_by_turn": {
+    "1": [
+      ".repair-backup/app.js",
+      ".repair-backup/index.html",
+      "STATUS.md",
+      "app.js",
+      "app.test.js",
+      "index.html"
+    ],
+    "2": [
+      "STATUS.md",
+      "app.test.js",
+      "index.html"
+    ],
+    "3": [],
+    "4": []
+  },
+  "reviewed_candidate_core_matches_current_source": true,
+  "reviewed_core_hashes_sha256": {
+    "skills/keep-the-meaning/SKILL.md": "4f83d41c35b08b26e0151104df423583a300822905111f0a70a281ceec1d2d92",
+    "skills/keep-the-meaning/references/interpret-and-act.md": "d95f84f47d6ab6380bbc333f3a806dfaff28a495ea6126c558527fc7d36c874c",
+    "skills/build-clear-apps/SKILL.md": "5e71c147a5f329cd44ddbf72fa7e4e1ffd24cc6f85d804be99962feef9e7a801",
+    "skills/build-clear-apps/references/build-method.md": "3ab9b7f88c52e25a0ee543e3c70d2c31fabf6e87b563fc0cc50963cea8be12d1"
+  },
+  "turn2_source_hashes_sha256": {
+    "app.js": "4fd3f59c3d7e214518da72795cf02c68d733db86a8a2df22810a2a2ecf05cbb4",
+    "index.html": "3f9f7f26d77ec62c2e92088b89af81e672f40298483c66cd4753a90e5a03b4e8",
+    "STATUS.md": "2a56107091f3d93eae8fcf08101337db074e4af726795ded6299df704c25d487",
+    "app.test.js": "8736c6e417acad74a9aa3bd67499572ee6dc5dc0ff7799d9f6437fe916784d74"
+  },
+  "observed_task_boundaries": "No browser operation, network/service tool, download, account/credential action, publication or external message appears among the completed task tools. The four authorised native hosted-model turns are separate from this observation.",
+  "remaining_limits": [
+    "One candidate run, no paired baseline and no causal or population benefit claim.",
+    "Initial task and wrong handoff were seeded fictional context; this is not a replay of a real private conversation.",
+    "Candidate loaded from project-local skill files with public installed plugin disabled; final release identity/install remain separate.",
+    "The independent wiring checks use Node element/FormData stand-ins, not a browser, native keyboard/focus, screen reader, layout, file-origin storage or participant session.",
+    "Inherited global guidance may influence behaviour and remains a confound.",
+    "Passing the specific task and pause/answer-only cases does not establish reliable skill selection or compliance on every task."
+  ]
+}

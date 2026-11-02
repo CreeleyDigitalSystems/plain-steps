@@ -2,7 +2,7 @@
 
 Describe the work in your own words. Plain Steps helps the host AI keep your meaning and build an app with understandable actions and recovery.
 
-This is **experimental 0.2.0**. Version 0.1.0 remains preserved. Read [Verification](docs/VERIFICATION.md) for what is written, installed, executed, tested and still unfinished.
+This is **experimental 0.2.1**. Version 0.1.0 remains preserved. Read [Verification](docs/VERIFICATION.md) for what is written, installed, executed, tested and still unfinished.
 
 ## Everyday use
 
@@ -44,11 +44,11 @@ The package has no model API client, backend, telemetry, chat archive or account
 For released installation use the repository's root guide or these commands:
 
 ```sh
-codex plugin marketplace add https://github.com/CreeleyDigitalSystems/plain-steps --ref v0.2.0
+codex plugin marketplace add https://github.com/CreeleyDigitalSystems/plain-steps --ref v0.2.1
 codex plugin add plain-steps@plain-steps-public
 ```
 
-An existing source pinned to 0.1.0 stays pinned. Remove only its `plain-steps-public` marketplace registration through the host, then register the tag above and install again. Preserve other marketplaces and generated project files.
+An existing source pinned to an earlier tag stays pinned. Remove only its `plain-steps-public` marketplace registration through the host, then register the tag above and install again. Preserve other marketplaces and generated project files.
 
 A ZIP containing this plugin is separate from the repository's marketplace catalogue. Check the actual release/tag before installing a version.
 

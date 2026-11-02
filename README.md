@@ -2,7 +2,7 @@
 
 AI skills and local build resources for two connected jobs: preserve what a person means, then produce software they can understand and use. A short chat reply alone does not make the resulting app understandable.
 
-**Experimental 0.2.0.** Conversation workflows, reusable build code, an HTML source inspector and optional project setup. Ordinary native app and correction runs have been inspected; browser and participant checks remain open. The [0.1.0 release](https://github.com/CreeleyDigitalSystems/plain-steps/releases/tag/v0.1.0) is preserved. See [Verification](plugins/plain-steps/docs/VERIFICATION.md) for the evidence and limits.
+**Experimental 0.2.1.** Conversation workflows, reusable build code, an HTML source inspector and optional project setup. Ordinary native app and correction runs have been inspected; browser and participant checks remain open. The [0.1.0 release](https://github.com/CreeleyDigitalSystems/plain-steps/releases/tag/v0.1.0) is preserved. See [Verification](plugins/plain-steps/docs/VERIFICATION.md) for the evidence and limits.
 
 ## Use your own words
 
@@ -17,13 +17,15 @@ The host decides which installed skill to select. The build skill now describes 
 Use the tagged public source:
 
 ```sh
-codex plugin marketplace add https://github.com/CreeleyDigitalSystems/plain-steps --ref v0.2.0
+codex plugin marketplace add https://github.com/CreeleyDigitalSystems/plain-steps --ref v0.2.1
 codex plugin add plain-steps@plain-steps-public
 ```
 
-If you previously pinned this marketplace to 0.1.0, remove only its Plain Steps registration with `codex plugin marketplace remove plain-steps-public`, then run the two commands above to register and install 0.2.0. Preserve other marketplaces and any project files.
+If you previously pinned this marketplace to an earlier tag, remove only its Plain Steps registration with `codex plugin marketplace remove plain-steps-public`, then run the two commands above to register and install 0.2.1. Preserve other marketplaces and any project files.
 
 Follow the host's actual trust or permission prompts. For a reviewed local checkout, `codex plugin marketplace add .` from its repository root registers that source before `plugin add`. A marketplace name already registered to a different source must be reconciled through the host controls; do not assume the command replaces it. A local install is not proof of public release or successful activation. This source marketplace is separate from an OpenAI directory listing. Web, mobile and other hosts need their own availability checks.
+
+Version 0.2.1 repairs a task-continuation failure: ordinary work should verify the requested artifact, while package-maintainer experiments stay separate. Relevance questions steer unfinished work back into action; explicit pauses still stop it.
 
 ## What the package does
 

@@ -1,0 +1,83 @@
+{
+  "run": "four-turn native candidate",
+  "passed": 18,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "turn1 exports real calculation contract",
+      "passed": true
+    },
+    {
+      "name": "turn1 known entered values produce 1875 seconds and31:15",
+      "passed": true
+    },
+    {
+      "name": "turn1 changed input produces975 seconds and16:15",
+      "passed": true
+    },
+    {
+      "name": "turn1 starting HTML keeps original four requested values",
+      "passed": true
+    },
+    {
+      "name": "turn1 actual existing form keeps all four editable inputs",
+      "passed": true
+    },
+    {
+      "name": "turn1 loaded form retains original editable input values",
+      "passed": true
+    },
+    {
+      "name": "turn1 submit wiring uses current form values for two results",
+      "passed": true
+    },
+    {
+      "name": "turn2 starting HTML correction preserves the other three starting values",
+      "passed": true
+    },
+    {
+      "name": "turn2 loaded form starts at corrected values without locking inputs",
+      "passed": true
+    },
+    {
+      "name": "turn2 corrected calculation produces2055 seconds and34:15",
+      "passed": true
+    },
+    {
+      "name": "turn2 actual submit wiring calculates the corrected entered values",
+      "passed": true
+    },
+    {
+      "name": "turn2 submit still accepts user-entered earlier minutes rather than forcing corrected default",
+      "passed": true
+    },
+    {
+      "name": "turn2 user can still edit all entered fields",
+      "passed": true
+    },
+    {
+      "name": "turn3 explicit pause leaves tracked app andSTATUS bytes unchanged",
+      "passed": true
+    },
+    {
+      "name": "turn3 explicit pause leaves entire fixture tree unchanged",
+      "passed": true
+    },
+    {
+      "name": "turn4 simple arithmetic answer contains42",
+      "passed": true
+    },
+    {
+      "name": "turn4 answer-only request leaves tracked app andSTATUS bytes unchanged",
+      "passed": true
+    },
+    {
+      "name": "turn4 answer-only request leaves entire fixture tree unchanged",
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Pure Node arithmetic and element/FormData stand-ins; not actual browser, keyboard, screen-reader, layout, file-origin storage or participant evidence.",
+    "A passing fixture demonstrates this concrete execution, not causal benefit or reliable every-host selection."
+  ]
+}

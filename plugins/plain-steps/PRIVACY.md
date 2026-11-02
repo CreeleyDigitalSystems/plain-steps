@@ -1,6 +1,6 @@
 # Plain Steps privacy
 
-Version 0.2.0 — 3 November 2026
+Version 0.2.1 — 3 November 2026
 
 Plain Steps is published by Creeley Digital Systems as skills and original local code. It does not operate a hosted AI or publisher-run storage service.
 

@@ -1,8 +1,16 @@
 # Verification
 
+## 0.2.1 — repair everyday task continuation
+
+A production instruction mistakenly required an unrelated fictional evaluation during ordinary app work. That requirement is now confined to the maintainer evaluation document. Everyday guidance verifies the requested artifact and continues authorised work after a relevance question or correction. Explicit pause, stop, switch and explain-only instructions still win. No hooks, profiles, global rules or permissions changed.
+
+The live conversation exposed an execution failure, but an already-running chat's inherited catalogue does not prove it loaded the newly installed 0.2.0 guidance. This patch is tested in a fresh native session; installation is not retroactive proof of control over an older chat. The new execution receipt is recorded separately from historical results below.
+
+One ephemeral native session completed four real turns after a fictional seeded wrong handoff. Independent inspection passed 18/18 checks: the actual runtime and form handler were repaired after the relevance question; a later quantity correction propagated into defaults/results while inputs stayed editable; all 36 fixture files stayed byte-identical through explicit pause and answer-only turns. The completed trace read the candidate build skill and build method. A meaning-skill read was not observed. Global guidance remained present, so this is regression evidence, not an isolated causal effect or everyday-reliability estimate. See the [protocol](../evals/continuation/protocol.json) and [results](../evals/continuation/results.json) and [independent review](../evals/continuation/execution-review.md). Browser and participant benefit remain unverified.
+
 The current implementation has completed native-generated fictional apps and a configured correction. Its new evidence is source, logic and simulated event wiring; actual browser and participant journeys remain open. Published 0.1.0 evidence is preserved below as historical.
 
-## Current implementation evidence — 3 November 2026
+## Retained 0.2.0 implementation evidence — 3 November 2026
 
 | Layer | Observed result | Practical limit |
 |---|---|---|
