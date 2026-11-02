@@ -1,0 +1,5 @@
+Build the app in this folder as plain HTML, CSS and JavaScript with no downloads or external resources.
+
+Could you make me a paint calculator for a small room? Wall area is 18, no sorry 24 square metres. Two coats, coverage is 12 square metres per litre and the tin is 2.5 litres. Let me change those numbers and show litres needed and whole tins to get. Don't add a waste allowance or prices. Keep the plan on this device so I can close and reopen it. No accounts, cloud, emails or reminders, budget $0. Maybe share a plan later, but leave that idea alone for now. Please build it rather than just describing it.
+
+Use only this fictional request and files in this folder, plus relevant installed skills/resources. Do not browse, use a model API, start a server or run browser automation. Do not read unrelated chats, project records or credentials. Static and logic checks are allowed. State honestly which user interactions remain unverified.

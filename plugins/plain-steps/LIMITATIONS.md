@@ -1,18 +1,18 @@
-# Limits and verification
+# Limits and unfinished verification
 
-Plain Steps helps an AI organise language and design/build apps. It is not a diagnosis, treatment, medical device, clinical assessment or accessibility certification.
+Plain Steps is a skills-and-code package for faithful communication and understandable app building. It supplies no diagnosis, treatment, clinical assessment or accessibility certification.
 
-- **Instructions can fail.** Models can lose a negation, over-summarise, ask unnecessary questions or ignore an instruction. Use retained requirements and real task completion to judge the output.
-- **No universal preference profile.** Autism, ADHD and other labels do not determine a person's preferences or capability. Two large actions, concise text and progressive disclosure are starting options, not universal requirements. They can hide useful information if applied rigidly.
-- **No host control.** The package cannot rewrite a chat application's interface, intercept every message, persist memory across hosts, activate itself in every chat or run an unattended worker. Activation and tool availability depend on the host.
-- **No self-contained model.** The source is free under its licence; AI access, subscriptions, model usage, API calls and hosting are separate. The package supplies no paid allowance or production API access.
-- **No blanket app guarantee.** A working example does not prove another generated app is usable, accessible, secure, deployed or saved correctly. Automated checks cannot establish all keyboard, screen-reader, cognitive or lived-experience usability.
-- **Storage can fail.** Browser storage can be unavailable, cleared, shared or removed. The example is not a backup service or a place for important or sensitive records.
-- **Research has limits.** Qualitative findings and public first-person reports can reveal problems but do not establish prevalence. W3C cognitive guidance supplements WCAG; following selected patterns does not establish full conformance.
-- **Synthetic evaluation is limited.** Fictional tasks and model-generated outputs are fixtures. They are not participant testing, a clinical outcome or proof that users will need fewer corrections.
-- **Distribution states differ.** A valid archive is not an installed plugin. A public repository is not a universal directory listing. Desktop, web and mobile support each require their own discovery, activation and useful-work checks.
-- **Permissions remain yours.** A goal or an idea does not authorise spending, external publication, credential changes, destructive operations or access to unrelated data. The skills do not expand host permissions or override current user instructions.
+- **Model instructions can fail.** A model can still lose a condition, misread a correction or choose the wrong tool. Judge the actual output against the active request.
+- **Selection is host-controlled.** Install once in a supported host and use normal requests, but do not assume every message or host invokes the skills. Catalogue visibility, observed selection and useful work need separate evidence. Observed native selection was mixed. Optional one-time project defaults and explicit naming can help; neither guarantees selection. Setup must preserve the effective override or custom instruction source and refuses uncertain file operations.
+- **Preferences differ.** Short text, two start actions and progressive detail are options. A dense overview or precise explanation can be clearer. The package does not infer needs from a diagnosis or require disclosure.
+- **Local helpers have narrow jobs.** The scaffolder validates an explicit, single-result bounded arithmetic contract. It does not parse natural language or support arbitrary operations, multiple outputs, whole-unit rounding, dates, bookings or remote workflows. The agent must implement the real job rather than omit requirements to fit the template.
+- **Source inspection is limited.** The HTML inspector follows no assets and executes no page code. No static concern does not mean the rendered app, keyboard flow, screen reader or content is usable or conformant.
+- **Storage is not a backup.** Browser data is unencrypted, origin/device-bound and may be blocked, cleared, shared or evicted. Conflict detection is best effort. Apps needing durable or cross-device records require a suitable separately authorised design.
+- **No host UI or background control.** There is no host-interface rewrite, every-prompt interception, transcript archive, persistent profile, scheduler or cross-chat memory in the package.
+- **Free package, separate host use.** MIT source does not include a model, API credits, subscription or hosting allowance. Host/model charges, limits and data rules still apply.
+- **Fixtures are not people.** The matched fictional conversation runs both passed their supplied invariants; no semantic advantage or reduced repair burden was demonstrated. A model-assisted single run is not participant or clinical evidence.
+- **A working example is one example.** Code, unit/state tests and generated files do not establish another app's real operation or comprehension. A paint task also included in the resource examples cannot establish unfamiliar-domain generalisation.
+- **Release states differ.** The 0.1.0 public source release is preserved. The 0.2.0 installation, native execution, browser task completion and publication have separate records; native code checks do not close browser acceptance. A Git release is separate from an OpenAI directory listing. Web, mobile and other hosts remain unverified unless named evidence exists.
+- **Authority remains with the user.** Skills do not approve publication, transfers, spending, credentials, destructive actions or unrelated access. Current user instructions and host permissions control.
 
-For a meaningful result, check the user's original requirements against the final app, run the actual task, and report the precise unverified step. See the research and source-to-test matrix for the rationale behind the rules.
-
-Participant testing, clinical outcomes and all-host compatibility remain unverified unless a specific release publishes appropriate evidence.
+See [Verification](docs/VERIFICATION.md), [Evaluation](docs/EVALUATION.md) and the [source-to-test matrix](docs/source-to-test.csv). The useful end-to-end result remains unfinished where its required task check has not run.

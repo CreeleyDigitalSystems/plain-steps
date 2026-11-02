@@ -1,56 +1,42 @@
 # Plain Steps
 
-Reusable AI skills for keeping the meaning of rough requests and building apps with a clear next action.
+AI skills and local build resources for two connected jobs: preserve what a person means, then produce software they can understand and use. A short chat reply alone does not make the resulting app understandable.
 
-Plain Steps has two connected jobs: help an assistant understand what someone actually asked, then help it build an app the person can use. A concise reply alone does not make the resulting app understandable.
+**Experimental 0.2.0.** Conversation workflows, reusable build code, an HTML source inspector and optional project setup. Ordinary native app and correction runs have been inspected; browser and participant checks remain open. The [0.1.0 release](https://github.com/CreeleyDigitalSystems/plain-steps/releases/tag/v0.1.0) is preserved. See [Verification](plugins/plain-steps/docs/VERIFICATION.md) for the evidence and limits.
 
-**Version 0.1.0:** experimental source release. [Verification](plugins/plain-steps/docs/VERIFICATION.md) records 12 local app checks and six interpretation fixtures. The fixtures did not demonstrate improved requirement retention. Native automatic activation, matched baseline-app execution, screen-reader and participant validation remain open. This is a source/marketplace release, separate from an OpenAI directory listing.
+## Use your own words
 
-## Start with your own words
+Install once in a supported host, leave the plugin enabled, and describe the work normally. No diagnosis, profile quiz, rewritten prompt or repeated accessibility instruction is required by the package.
 
-Select Plain Steps in a supported host and describe the work normally. No diagnosis, profile or rewritten prompt is needed.
+> “Make a local loan book for workshop equipment. Record the item and borrower, mark returns, keep the history and let me undo a mistaken return. No account or cloud.”
 
-- “Help me keep the meaning of this rough request.”
-- “Build a clear app from this goal.”
+The host decides which installed skill to select. The build skill now describes ordinary user-facing app creation and repair, rather than waiting for an accessibility request. Observed selection was mixed. For repeated work in one project, say “Use Plain Steps in this project.” The optional setup skill preserves existing project instructions and adds a small, scoped default after checking the active instruction source. It changes no global settings and captures no chats. Explicitly naming `$keep-the-meaning` or `$build-clear-apps` remains a troubleshooting step.
 
-The package contains two focused skills, [Keep the meaning](plugins/plain-steps/skills/keep-the-meaning/SKILL.md) and [Build clear apps](plugins/plain-steps/skills/build-clear-apps/SKILL.md). You can use either independently. The host decides whether to activate a skill; selecting or naming the skill helps make that choice explicit.
+## Install
 
-## Install from a local checkout
-
-From this repository's root:
+Use the tagged public source:
 
 ```sh
-codex plugin marketplace add .
+codex plugin marketplace add https://github.com/CreeleyDigitalSystems/plain-steps --ref v0.2.0
+codex plugin add plain-steps@plain-steps-public
 ```
 
-Then run `codex plugin add plain-steps@plain-steps-public`, or choose **Plain Steps** from this marketplace in the desktop host. Follow any host-required trust or permission prompts. Registration adds a marketplace source; it does not by itself prove installation or skill activation. A desktop restart may be required for discovery.
+If you previously pinned this marketplace to 0.1.0, remove only its Plain Steps registration with `codex plugin marketplace remove plain-steps-public`, then run the two commands above to register and install 0.2.0. Preserve other marketplaces and any project files.
 
-The public release uses a tag-pinned Git source:
+Follow the host's actual trust or permission prompts. For a reviewed local checkout, `codex plugin marketplace add .` from its repository root registers that source before `plugin add`. A marketplace name already registered to a different source must be reconciled through the host controls; do not assume the command replaces it. A local install is not proof of public release or successful activation. This source marketplace is separate from an OpenAI directory listing. Web, mobile and other hosts need their own availability checks.
 
-```sh
-codex plugin marketplace add CreeleyDigitalSystems/plain-steps --ref v0.1.0
-```
+## What the package does
 
-Check the actual published tag before installing. Local registration and installation were verified; remote-source readback and install are recorded separately in the release receipt. See the [official package guide](https://developers.openai.com/plugins/build/plugins).
+- [Keep the meaning](plugins/plain-steps/skills/keep-the-meaning/SKILL.md): rough requests, corrections, faithful rewrites and incoming messages, with the person's chosen voice and detail.
+- [Build clear apps](plugins/plain-steps/skills/build-clear-apps/SKILL.md): implement the real task with concrete actions, findable detail, keyboard/native controls and recovery in the first flow.
+- [Optional project setup](plugins/plain-steps/skills/setup-plain-steps/SKILL.md): enable relevant guidance once for a chosen project, preserving existing instructions.
+- [Local build resources](plugins/plain-steps/docs/ARCHITECTURE.md): original utilities, styles, a bounded calculation scaffolder and a read-only HTML source inspector. These support the agent; they are not an extra user intake form or a backend.
+- [Research](plugins/plain-steps/docs/RESEARCH.md) and [source-to-test matrix](plugins/plain-steps/docs/source-to-test.csv): problems, remedies, evidence strength and unfinished checks.
 
-## What is included
+The [packing reference](plugins/plain-steps/examples/packing/index.html) demonstrates a small offline flow. It is one example, not the plugin interface or proof that every generated app works. Two large start actions are an option; a direct form or dense overview may suit another task better.
 
-- [Plugin guide](plugins/plain-steps/README.md): usage and everyday preferences.
-- [Architecture](plugins/plain-steps/docs/ARCHITECTURE.md): how meaning and build guidance connect.
-- [Research](plugins/plain-steps/docs/RESEARCH.md): evidence, limits and source links.
-- [Source-to-test matrix](plugins/plain-steps/docs/source-to-test.csv): the remedies and their acceptance checks.
-- [Privacy](plugins/plain-steps/PRIVACY.md), [limitations](plugins/plain-steps/LIMITATIONS.md), [licence](plugins/plain-steps/LICENSE) and [release notes](plugins/plain-steps/CHANGELOG.md).
+## Cost, data and limits
 
-The representative example is a fictional three-night packing app. It demonstrates a small everyday surface with deeper detail available when wanted. Its exact test results belong in the release evidence, not in a promise about every app an AI might build.
+The package is free under the [MIT licence](LICENSE). It supplies no model, subscription, API credits or hosting allowance. Host/model charges, limits and privacy settings remain separate. The package requires no new account or key and adds no server, telemetry, chat capture or persistent profile.
 
-## Cost and scope
-
-The package is offered under the MIT licence with no package charge. It does not supply a model, subscription, API credits or paid hosting. Your chosen AI host may have charges, usage limits and its own privacy rules. No new account or key is required by these skills.
-
-Plain Steps is instruction and example source, not a clinical service or a guarantee of accessibility. Desktop, web and mobile availability must be checked separately. A public source release is distinct from an OpenAI directory listing. This project is independently published by Creeley Digital Systems and does not imply platform endorsement.
-
-## Working example
-
-This is the bundled offline example, not a panel inside the AI host.
-
-![Packing example](plugins/plain-steps/assets/packing-home.png)
+Read the [plugin guide](plugins/plain-steps/README.md), [Privacy](plugins/plain-steps/PRIVACY.md), [Limits](plugins/plain-steps/LIMITATIONS.md) and [Changes](plugins/plain-steps/CHANGELOG.md). Plain Steps is independently published by Creeley Digital Systems; no platform endorsement, clinical benefit, universal accessibility or automatic conformance is claimed.

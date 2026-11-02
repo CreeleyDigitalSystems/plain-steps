@@ -1,25 +1,39 @@
 ---
 name: build-clear-apps
-description: Build or repair an understandable app flow when the user asks for clearer screens, fewer confusing decisions or cognitive accessibility. Preserve functionality and individual preferences.
+description: Create or repair user-facing app screens and workflows from an ordinary app request, including forms, calculators, lists and multi-step tasks. Build understandable interactions and recovery into the first implementation; the user need not ask separately for accessibility.
 ---
 # Build clear apps
 
-Produce working software people can understand and use. Inspect existing implementation/wiring and preserve recoverable changes before replacing it. Follow device, framework, privacy and budget constraints. Do not add a backend, account or paid AI service to a local task.
+Deliver an understandable working app from the person's actual request. This applies while creating or changing a user-facing flow, not to unrelated code-only work or simple factual answers. Do not wait for “make it accessible” or a diagnosis disclosure. Skill selection is host-controlled; installation alone does not guarantee invocation.
 
-Recover the actual job, essential functions, exclusions and completion condition. Preserve corrections/preferences. For rough requests also use [Keep the meaning](../keep-the-meaning/SKILL.md). Never infer needs from diagnosis or require disclosure.
+## Carry meaning into the implementation
 
-For a simple start try two large concrete primary actions and one obvious next step. This is adaptable, not universal or a two-control limit. Dense lists may be preferable when requested. Essential actions, state, back and help stay findable. Optional detail must not hide decision-critical information. Avoid speculative dashboards. Labels name work: “Add an item”, not “Manage”.
+Inspect the existing source, wiring and working journey before replacing it. Preserve recoverable changes. Recover the intended job, data/units, exclusions, corrected values, privacy/cost constraints and actual completion condition. For rough or conflicting language use [Keep the meaning](../keep-the-meaning/SKILL.md). Ask one material question only if a missing answer changes the action; continue independent authorised work.
 
-Use progressive disclosure with a visible named detail route. Offer useful density/detail/motion adjustments without a profile quiz. Retain precision. Do not replace necessary text with icons or force step-by-step pacing on users needing an overview. State where preferences persist.
+For substantial builds quietly keep a **task contract** in the existing project record: what the person can do, input → real operation → resulting state/destination, constraints that must survive, and the check that proves completion. Trace corrections through labels, calculations, persistence, documentation and tests. Do not require the person to fill a new brief or expose this contract on the everyday screen.
 
-Use semantic/native controls, meaningful labels/headings, predictable order and keyboard access. Show focus and deliberately move it after view changes. Announce useful status/errors without repeated interruption. Use generous targets (44px is this starter's design target, not WCAG 2.2 AA's minimum). Test 320 CSS px reflow, zoom, contrast, reduced motion and no colour-only meaning. Avoid timed dismissal, flashing, autoplay and drag-only operation.
+Choose the actual operation before the screen. A local calculator needs real calculations; a booking needs a real booking destination. Do not call a saved draft “booked”, mock dispatch “running”, or a manual form the requested automation. Use an existing supported tool/backend when necessary and authorised; a polished panel cannot replace that dependency.
 
-Make errors specific/recoverable: identify input, retain data, show correction and restore focus. Distinguish draft/saving/saved/failed honestly. Support predictable back, undo and resume. Back must not erase input. Explain storage limits; avoid sensitive persistence without informed choice. Render loaded data safely and handle corrupt/old storage without destroying it.
+## Make the first usable flow small
 
-Implement a real completion path with appropriate empty/loading/error/success/resumed states. Do not present decorative controls, mock activity or disconnected integrations as working. Keep diagnostic IDs/receipts outside everyday screens.
+Start from the user's main task rather than a dashboard of possible features. For a simple start, consider two large actions labelled with the actual work and one clear next step. Two is a starting pattern, not a requirement to add a home screen or hide useful controls. If a direct form/list is clearer or the user wants a dense overview, use it. Essential action, cost, save state, errors, back and help remain findable.
 
-For a small offline list inspect/adapt the [packing example](../../examples/packing/index.html). It supplies no AI backend, encrypted store or cross-device sync. Reuse principles rather than renaming it blindly for unrelated domains.
+Use concrete labels with precise conditions/units. Keep optional explanations behind a visible named disclosure; never hide information needed to decide. Provide density/detail/pacing controls only where useful, without a diagnostic profile or long intake. Honour the user's requested overview, precision, language, motion and pace. Change presentation without changing functionality or meaning.
 
-Verify the actual task including keyboard, errors, back/undo and reopening. Compare baseline/candidate on identical fictional tasks. Count decisions/visible controls honestly; fewer alone does not prove usability. Test different stated preferences, including dense precise overview. Include stop, local-only, correction and hypothetical negative cases.
+Read [the build method](references/build-method.md) for screen/state selection and remedies. For dependency-free web apps, inspect the [native flow kit](assets/flow-kit.js) and [styles](assets/flow.css). They provide safe local state, focus/status/error helpers and reflow primitives; they are not a backend or a UI rewrite for the host. When a single-result numeric task fits a start/continue flow, [the deterministic scaffolder](scripts/scaffold.cjs) generates a real local app from an explicit contract; read [its contract](references/calculation-contract.md). The agent authors that contract from the request—do not send the user to a configuration form. Do not omit required outputs or rules to fit the template. For multiple results, whole-unit allocation, dates or other unsupported operations, implement the actual operation explicitly and reuse only compatible parts. Do not force a non-calculation app into this pattern.
 
-Combine automated and visual/interaction checks. A pass is not full WCAG conformance, lived-experience validation, clinical benefit or guaranteed model adherence. State tested environments and unfinished human/device checks. See [research](../../docs/RESEARCH.md) and [evaluation](../../docs/EVALUATION.md).
+## Implement recovery as part of the job
+
+Use semantic/native controls, meaningful accessible names/headings, visible keyboard focus and predictable traversal. Move focus deliberately after view changes, validation and undo. Announce meaningful completion/save/error changes without interrupting every keystroke. Keep textual states, not colour-only meaning. Support generous targets, 320 CSS px reflow/zoom and reduced motion. Avoid flashing, autoplay, drag-only actions, timed dismissal and surprise navigation.
+
+Keep drafts on Back and validation failure. Show truthful draft/saving/saved/failed state and an actionable retry when safe. Undo must identify the operation it reverses; resumption must restore the correct values/state. Render user data as text. Do not overwrite corrupt, unknown-version or externally changed storage to manufacture a successful save. Local browser storage is unencrypted, origin/device-bound, may fail/be cleared and is not a backup; explain its actual boundary.
+
+## Prove the ordinary task
+
+Run an ordinary fictional request in the intended installed host without naming this skill or adding an accessibility repair prompt, on a domain different from bundled examples. Record actual discovery/invocation separately from output quality. Verify the real operation and final result, not a screenshot or self-report.
+
+Test keyboard completion; accessible labels/focus/status; invalid input with recovery; Back, Undo and reopening; stated compact and detail-seeking preferences; narrow/zoom layout; storage/provider failure; correction and excluded-feature cases. Compare baseline/candidate under the same task, tools and context. Count required actions, clarification/repair prompts and completed work; fewer controls alone does not establish comprehension.
+
+When Python is available, the optional [source inspector](../../scripts/audit_ui.py) can report static labels, references and the authored initial surface without executing a page. It is an agent inspection aid, not an app-runtime dependency, rendered-DOM test or usability/conformance verdict.
+
+Use permitted test surfaces. A browser policy refusal is not permission for a server/protocol/automation workaround. Preserve completed evidence and continue independent source/unit checks. Report exactly which behaviour is unverified. Automated checks, synthetic preferences and one working example are not WCAG certification, participant validation or guaranteed effectiveness. See [research](../../docs/RESEARCH.md) and [evaluation](../../docs/EVALUATION.md).

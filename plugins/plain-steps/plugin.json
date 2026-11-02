@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "plain-steps",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Preserve rough requests and build understandable app flows.",
   "author": {
     "name": "Creeley Digital Systems"
@@ -12,7 +12,7 @@
       "interface": {
         "displayName": "Plain Steps",
         "shortDescription": "Keep meaning. Build clearly.",
-        "longDescription": "Preserve constraints and corrections in rough requests. Build understandable app flows with concrete labels, adjustable detail, keyboard access and recoverable errors. Includes an offline example and transparent evaluation limits. No diagnosis is required.",
+        "longDescription": "Preserve meaning in rough requests, rewrites, incoming messages and corrections. Build understandable app flows from ordinary requests with reusable native interaction patterns, adjustable detail, keyboard access and recoverable errors. Includes executable local resources and transparent evidence. No diagnosis is required.",
         "developerName": "Creeley Digital Systems",
         "category": "Developer Tools",
         "capabilities": [],

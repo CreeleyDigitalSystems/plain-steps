@@ -1,0 +1,111 @@
+{
+  "review_date": "2026-11-03",
+  "scope": "Focused independent changed-source review of paint correction; earlier app review remains the pre-correction snapshot.",
+  "verdict": "No blocking defect found in the reviewed correction diff and focused pure Node probes.",
+  "state_proven": [
+    "written",
+    "tested locally at calculation and simulated element/storage level"
+  ],
+  "request": "native-correction-request.txt",
+  "current_app": "native-candidate-paint",
+  "prior_snapshot": "native-candidate-paint-before-correction",
+  "previous_review": [
+    "native-app-review.md",
+    "native-app-review.json"
+  ],
+  "expected": {
+    "defaults": {
+      "area_m2": 24,
+      "coats": 2,
+      "coverage_m2_per_litre": 10,
+      "tin_litres": 2
+    },
+    "initial": {
+      "litres": 4.8,
+      "whole_tins": 3,
+      "purchased_litres": 6
+    },
+    "edited_area_60": {
+      "litres": 12,
+      "whole_tins": 6,
+      "purchased_litres": 12
+    }
+  },
+  "diff_review": {
+    "app_js": "Only DEFAULTS changes: coverage 12 to 10; tin 2.5 to 2. All other runtime JS is byte-identical.",
+    "html": "Starting coverage/tin fields, litres/tins output, tin detail and formula corrected; no interaction or asset changes.",
+    "css": "Byte-identical.",
+    "checks": "Corrected result assertions and related examples updated; static starting-content and saved-plan/draft preservation cases added.",
+    "guidance": "Generic project guidance was created once before the configured followup. The ordinary correction request names neither skill nor accessibility.",
+    "scope": "No waste allowance, prices, accounts, cloud, messages, reminders, sharing, external resources or new runtime dependency added.",
+    "storage": "Storage key, version, loading/saving code and automatic save behavior unchanged. Prior saved values remain user data."
+  },
+  "author_evidence": {
+    "review_only_no_full_rerun": true,
+    "final_checks": {
+      "passed": 27,
+      "exit_code": 0
+    },
+    "red_test_observed": {
+      "exit_code": 1,
+      "actual_litres": 4,
+      "expected_litres": 4.8
+    },
+    "source": "checks.cjs",
+    "evidence_boundary": "Author test source and narrowly filtered completed-command evidence reviewed; private raw trace context excluded."
+  },
+  "trace_attribution": {
+    "installed_resource_version": "0.2.0",
+    "build_skill_completed_read": true,
+    "meaning_skill_completed_read": true,
+    "request_names_skill_or_accessibility": false,
+    "project_guidance_present": true,
+    "conclusion": "Configured followup demonstrates both installed skills being read during this concrete correction; it does not establish automatic selection without project guidance or causal benefit.",
+    "raw_private_trace_context_included": false
+  },
+  "independent_probe_kind": "focused pure Node calculation and simulated element/storage checks; not a browser",
+  "independent_checks": [
+    {
+      "name": "corrected default literals produce 4.8 L, 3 two-litre tins and 6 L purchased",
+      "status": "pass"
+    },
+    {
+      "name": "area 60 produces 12 L, 6 tins and 12 L purchased",
+      "status": "pass"
+    },
+    {
+      "name": "HTML and new simulated context agree with corrected starting numbers and results",
+      "status": "pass"
+    },
+    {
+      "name": "prior starting values remain a saved user plan, 4 L / 2 tins / 5 L, without reset",
+      "status": "pass"
+    },
+    {
+      "name": "custom valid saved plan keeps all four entered values rather than corrected defaults",
+      "status": "pass"
+    },
+    {
+      "name": "legacy draft with blank coverage survives, remains editable, and saves/restores completed values",
+      "status": "pass"
+    },
+    {
+      "name": "runtime JS apart from DEFAULTS and all CSS are byte-identical to pre-correction source",
+      "status": "pass"
+    }
+  ],
+  "findings": [],
+  "limits": [
+    "No browser, server, protocol or alternate-browser attempt.",
+    "Simulated element/storage checks are not actual browser input, file-origin/CSP, storage persistence, keyboard, screen-reader or layout validation.",
+    "The original native paint review remains a pre-correction snapshot and should not be read as the current-default result.",
+    "No participant or causal-comparison evidence."
+  ],
+  "exact_next_acceptance": "In the intended browser, reopen an existing saved plan and an unfinished draft and confirm entered values remain editable. In a profile with no saved record, confirm 24/2/10/2 yields 4.8 L and 3 tins, change area to 60 and confirm 12 L and 6 tins, then close/reopen and confirm persistence.",
+  "source_hashes_sha256": {
+    "app.js": "03118aecfa531529196a03cbe1d1d0e7e5f94e6c56ae0010d871e692b52b1a9d",
+    "index.html": "4fa6c3deebbc783be0fcca8856dc407ccae2635de4ed505599415d4a4b234248",
+    "styles.css": "14fbb27500936fe96a20ed22f52945ded43b0adef7b1b5e5510e3dfe7cb7d184",
+    "checks.cjs": "27c06da298e8bedca1e04c3046f9e9eede0a7d846b72a080502d0602a2bfd8aa"
+  }
+}

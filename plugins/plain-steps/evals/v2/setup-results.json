@@ -1,0 +1,51 @@
+{
+  "tests_run": 26,
+  "passed": 26,
+  "failures": 0,
+  "errors": 0,
+  "helper_sha256": "2ae28063809463016685fe3ec1edd329e2c453a6639f01d3293802ac07440597",
+  "groups": [
+    "apply creates only new file with exact readback",
+    "changed readback is retained without verified claim",
+    "cli preview apply check and merge exit states",
+    "competing file at exclusive create is never overwritten",
+    "empty candidates fail closed without shadowing other rules",
+    "exact active override is idempotent without normal file",
+    "exact existing block is noop with surrounding rules",
+    "existing altered duplicate and example blocks are preserved",
+    "existing block in replaced project is not reported configured",
+    "host confirmed custom fallback is readonly merge or noop",
+    "missing nondirectory ambiguous and protected scope make no directories",
+    "new file changed after readback is not reported verified",
+    "new override during inspection prevents false existing success",
+    "nonregular hardlinked and large files are refused",
+    "override created during write prevents verified setup claim",
+    "override precedence preserves both sources",
+    "partial write failure keeps inspectable file",
+    "preview and missing check never create files",
+    "project replacement after write is not reported configured",
+    "project substitution before create is detected",
+    "replaced existing instruction file is not reported configured",
+    "replaced inode even with exact content is not claimed verified",
+    "symlink project ancestor and instruction file are refused",
+    "unconfirmed source never creates a shadowing file",
+    "unsafe override is refused without creating normal file",
+    "unsupported nonfollowing operations refuse before write"
+  ],
+  "limits": [
+    "Synthetic filesystem/CLI checks only; no browser, model invocation, global configuration or real private project was touched.",
+    "An instruction file is configuration. Native selection and useful app completion need separate checks.",
+    "Safe non-following directory-relative operations are required; this run is on the current macOS runtime."
+  ],
+  "test_source": "evals/v2/setup-tests.py",
+  "test_source_sha256": "87432d4b5e5cc5d9f793c6d2a8f19d4c685ee46f02cc3892badfc4398c527639",
+  "test_source_adaptation": "The recorded 26-group author run used the workspace test source. The public copy changes only helper/result paths and uses system temporary fixtures. The adapted copy was syntax-checked and its helper path resolved; the unchanged full suite was not rerun solely for packaging.",
+  "independent_review": {
+    "focused_checks": 20,
+    "passed": 20,
+    "full_suite_rerun": false,
+    "report": "evals/v2/setup-review.md",
+    "report_sha256": "1d1fe161dc75c1c0d2367fa2a129ef91178c1f29a3052ec2642517e346144296",
+    "unresolved_material_findings": 0
+  }
+}

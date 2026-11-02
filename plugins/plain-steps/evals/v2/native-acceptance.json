@@ -1,0 +1,134 @@
+{
+  "record_date": "2026-11-03",
+  "scope": "Completed fictional native generation and configured correction; sanitized source/logic receipts only.",
+  "state": "Source written; local logic and simulated event wiring tested. New native browser/participant journeys remain unverified.",
+  "ordinary_requests_named_skill_or_accessibility": false,
+  "native_runs": [
+    {
+      "id": "historical-installed-v1-paint",
+      "request": "native-paint-request.txt",
+      "artifact": "native-v1-paint-baseline/",
+      "selection": "Installed 0.1 build skill explicitly read.",
+      "recorded_author_checks_passed": 15,
+      "turn_completion": "Interrupted; no final completion event. Existing run reconciled without duplication.",
+      "comparison_limit": "Installed 0.1 fixture; not a no-plugin native control.",
+      "browser_verified": false
+    },
+    {
+      "id": "unconfigured-v2-paint-control",
+      "request": "native-paint-request.txt",
+      "artifact": "native-v2-paint-control/",
+      "selection": "No Plain Steps read observed; other guidance was read.",
+      "author_checks_passed": 24,
+      "required_result": {
+        "area_m2": 24,
+        "coats": 2,
+        "coverage_m2_per_litre": 12,
+        "tin_litres": 2.5,
+        "litres": 4,
+        "whole_tins": 2,
+        "purchased_litres": 5
+      },
+      "review": "native-app-review.json",
+      "comparison_limit": "Quality cannot be attributed to Plain Steps. Preserved pre-correction snapshot.",
+      "browser_verified": false
+    },
+    {
+      "id": "unbundled-v2-workshop-loans",
+      "request": "native-loans-request.txt",
+      "selection": "Installed 0.2.0 build skill explicitly read.",
+      "author_tests": {
+        "passed": 15,
+        "failed": 0
+      },
+      "required_journey": "Initially empty; record Soldering iron / Morgan; return; retain and find Returned entry; undo latest return; read back saved state as still out.",
+      "observed_scope": "Actual core and app event handlers exercised in a pure Node element/storage stand-in.",
+      "review": "native-app-review.json",
+      "browser_verified": false
+    },
+    {
+      "id": "configured-v2-paint-correction",
+      "request": "native-correction-request.txt",
+      "artifact": "../../examples/paint-corrected/",
+      "selection": "After optional project guidance was created once, followup explicitly read both installed 0.2.0 skills.",
+      "author_checks_passed": 27,
+      "independent_focused_checks_passed": 7,
+      "required_result": {
+        "defaults": {
+          "area_m2": 24,
+          "coats": 2,
+          "coverage_m2_per_litre": 10,
+          "tin_litres": 2
+        },
+        "initial": {
+          "litres": 4.8,
+          "whole_tins": 3,
+          "purchased_litres": 6
+        },
+        "area_60": {
+          "litres": 12,
+          "whole_tins": 6,
+          "purchased_litres": 12
+        }
+      },
+      "preservation": "Prior saved 24/2/12/2.5, a separate custom plan and editable blank-coverage draft retained; completed draft saved/read back in simulated storage.",
+      "source_diff": "Runtime JS only DEFAULTS changed; CSS and storage logic unchanged. HTML initial content/checks updated.",
+      "review": "native-correction-review.json",
+      "browser_verified": false
+    }
+  ],
+  "independent_initial_review": {
+    "passed": 7,
+    "review": "native-app-review.json",
+    "scope": "Paint exact calculation; loan core/event journey; uncertain-save recovery; validation; safe text; local classic-script source checks. Not browser tests."
+  },
+  "optional_project_defaults": {
+    "applied_once_to": "fictional paint fixture only",
+    "state": "created_verified then already_configured by exact readback",
+    "guidance_sha256": "773e3b4d4bbcd88be8366624f5489c2e052e40e6f3a532cff6fc918a9e5d5ed1",
+    "final_author_filesystem_groups": 26,
+    "failures": 0,
+    "errors": 0,
+    "helper_sha256": "2ae28063809463016685fe3ec1edd329e2c453a6639f01d3293802ac07440597",
+    "receipt": "setup-results.json",
+    "limit": "Project instruction creation/readback is configuration. Actual selection/use is separately observed only in this configured correction; broader hosts and real projects unverified."
+  },
+  "supporting_implementation_checks": {
+    "current_engine_author_checks_passed": 19,
+    "focused_independent_core_probes_passed": 6,
+    "inspector_test_groups_passed": 6,
+    "limits": "Pure code/state/source cases; no browser or participant proof."
+  },
+  "response_comparisons": {
+    "same_cue_semantic": {
+      "cases_each": 12,
+      "applicable_invariants_passed_each": 151,
+      "not_applicable_each": 1,
+      "necessary_clarifications_each": 1,
+      "result": "Both passed; no measured semantic advantage.",
+      "grading": "semantic-grading.md"
+    },
+    "scope_regression": {
+      "cases": 2,
+      "invariants_passed_each": 20,
+      "grading": "scope-grading.md",
+      "limit": "Different instruction contexts; response-level only."
+    }
+  },
+  "attribution": "Native selection is mixed. Different tasks and instruction contexts prevent a causal native comparison or selection-reliability estimate. Configured followup does not establish unguided automatic selection.",
+  "scope_and_privacy": "No waste allowance, prices, accounts, cloud, messages, reminders, sharing or external assets implemented; loans has no due dates or sample entries. localStorage is unencrypted, clearable and not a backup. Raw CLI events, private paths and private trace context are excluded.",
+  "browser_barrier": {
+    "new_native_browser_tests_run": false,
+    "earlier_local_file_navigation_denial_preserved": true,
+    "server_alternate_browser_or_protocol_workaround_attempted": false
+  },
+  "open_limits": [
+    "Actual file-origin/CSP and browser storage close/reopen.",
+    "Actual keyboard/focus, assistive announcements, rendered reflow/zoom/contrast and physical devices.",
+    "Varied preference interaction and real participant usefulness.",
+    "Reduced repair burden, comparative task effort, causal improvement and generalization.",
+    "Broad host coverage and automatic selection reliability."
+  ],
+  "exact_next_acceptance": "Intended user manually reopens existing paint plans/drafts; verifies 24/2/10/2 gives 4.8 L / 3 tins, area 60 gives 12 L / 6 tins, and close/reopen persists. In loans, record Soldering iron / Morgan, return, find retained history, undo, close/reopen and confirm still out. Observe keyboard, errors, layout and assistive output.",
+  "historical_evidence": "../../docs/BEFORE-AFTER.md preserves original 0.1 packing comparison and unmatched browser evidence; initial native review remains pre-correction."
+}

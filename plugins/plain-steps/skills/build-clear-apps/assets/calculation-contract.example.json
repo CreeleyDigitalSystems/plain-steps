@@ -1,0 +1,18 @@
+{
+  "id": "paint-estimate-example",
+  "title": "Estimate paint needed",
+  "startLabel": "Make an estimate",
+  "resumeLabel": "Continue estimate",
+  "calculateLabel": "Calculate paint needed",
+  "resultLabel": "Paint needed",
+  "unit": "litres",
+  "precision": 1,
+  "density": "comfortable",
+  "explanation": "Multiply the area by the number of coats, then divide by coverage per litre. This is a simple arithmetic example. It does not include surface condition, waste or product-specific advice.",
+  "fields": [
+    {"id": "area", "label": "Area to paint (m²)", "min": 0.01, "max": 10000},
+    {"id": "coats", "label": "Number of coats", "min": 1, "max": 10, "integer": true, "default": 1},
+    {"id": "coverage", "label": "Coverage (m² per litre)", "help": "Use the coverage stated for the product you are considering.", "min": 0.01, "max": 1000}
+  ],
+  "formula": {"op": "divide", "args": [{"op": "multiply", "args": [{"field": "area"}, {"field": "coats"}]}, {"field": "coverage"}]}
+}

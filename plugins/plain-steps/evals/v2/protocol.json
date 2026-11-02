@@ -1,0 +1,13 @@
+{
+  "semantic_generator_inputs": "Only id/request, identical independent-case/context/side-effect cues and output format; candidate additionally loaded skill/workflows. Expected invariants hidden from both generators.",
+  "blind_map": {
+    "A": "candidate 0.2 skill",
+    "B": "ordinary baseline without new skill"
+  },
+  "same_model_conditions": "Inherited collaboration runtime; no model override",
+  "cases": 12,
+  "applicable_invariants_each": 151,
+  "result": "Both passed; no advantage demonstrated.",
+  "native_comparison": "Installed0.1 baseline versus local0.2 candidate, not a no-plugin native control.",
+  "browser_and_participant_validation": false
+}

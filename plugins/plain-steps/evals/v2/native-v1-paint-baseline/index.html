@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f3ee">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' file:; style-src 'self' file:; img-src 'self' data:; connect-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <title>Room for colour — Paint calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <a class="brand" href="#main" aria-label="Room for colour, paint calculator">
+          <svg viewBox="0 0 32 32" width="32" height="32" fill="none" aria-hidden="true">
+            <path d="M6 11 16 5l10 6v13l-10 5-10-5V11Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="m6 11 10 6 10-6M16 17v12" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+          <span>room for colour<span class="brand-dot">.</span></span>
+        </a>
+        <span class="local-badge"><span aria-hidden="true"></span>On this device</span>
+      </header>
+
+      <main id="main">
+        <div class="intro">
+          <p class="eyebrow">A SMALL ROOM. A FRESH START.</p>
+          <h1>A little paint.<br>A whole new feeling.</h1>
+          <p class="intro-copy">Work out how much paint your room needs.<br class="desktop-break"> Change the numbers below — we’ll do the maths.</p>
+        </div>
+
+        <div class="calculator">
+          <section class="plan-panel" aria-labelledby="plan-heading">
+            <div class="section-heading">
+              <span class="step-number" aria-hidden="true">01</span>
+              <h2 id="plan-heading">Your room plan</h2>
+            </div>
+            <p class="section-copy">Four numbers, and you’re ready to roll.</p>
+
+            <form id="paint-form" novalidate>
+              <div class="field">
+                <label for="area">Wall area <span class="sr-only">in square metres</span></label>
+                <p class="field-hint" id="area-hint">The total area you want to paint.</p>
+                <div class="input-wrap">
+                  <input id="area" name="area" type="text" inputmode="decimal" maxlength="32" value="24" autocomplete="off" spellcheck="false" aria-describedby="area-hint area-error" required>
+                  <span class="input-unit" aria-hidden="true">m²</span>
+                </div>
+                <p class="field-error" id="area-error" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="coats">Number of coats</label>
+                <p class="field-hint" id="coats-hint">How many times you’ll paint each wall.</p>
+                <div class="input-wrap">
+                  <input id="coats" name="coats" type="text" inputmode="numeric" maxlength="32" value="2" autocomplete="off" spellcheck="false" aria-describedby="coats-hint coats-error" required>
+                  <span class="input-unit" aria-hidden="true">coats</span>
+                </div>
+                <p class="field-error" id="coats-error" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="coverage">Paint coverage <span class="sr-only">in square metres per litre</span></label>
+                <p class="field-hint" id="coverage-hint">Area covered by one litre, for one coat. Check the tin.</p>
+                <div class="input-wrap">
+                  <input id="coverage" name="coverage" type="text" inputmode="decimal" maxlength="32" value="12" autocomplete="off" spellcheck="false" aria-describedby="coverage-hint coverage-error" required>
+                  <span class="input-unit" aria-hidden="true">m² / L</span>
+                </div>
+                <p class="field-error" id="coverage-error" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="tinSize">Tin size <span class="sr-only">in litres</span></label>
+                <p class="field-hint" id="tinSize-hint">How much paint is in each tin.</p>
+                <div class="input-wrap">
+                  <input id="tinSize" name="tinSize" type="text" inputmode="decimal" maxlength="32" value="2.5" autocomplete="off" spellcheck="false" aria-describedby="tinSize-hint tinSize-error" required>
+                  <span class="input-unit" aria-hidden="true">L</span>
+                </div>
+                <p class="field-error" id="tinSize-error" hidden></p>
+              </div>
+            </form>
+            <div class="save-notice">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M10 17h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              <p id="save-status" role="status">Checking saved plan…</p>
+            </div>
+          </section>
+
+          <section class="result-panel" aria-labelledby="result-heading">
+            <div class="section-heading">
+              <span class="step-number" aria-hidden="true">02</span>
+              <h2 id="result-heading">Your paint, worked out</h2>
+            </div>
+
+            <svg class="room-art" viewBox="0 0 400 230" fill="none" aria-hidden="true">
+              <ellipse cx="211" cy="207" rx="158" ry="14" fill="#243c32" opacity=".07"/>
+              <path d="M59 168V53l141 26 143-37v126l-144 40L59 168Z" fill="#e7dfd0"/>
+              <path d="M59 53 200 79v129L59 168V53Z" fill="#c1cbb3"/>
+              <path d="m200 79 143-37v126l-144 40 1-129Z" fill="#dce3d0"/>
+              <path d="m59 168 141-36 143 36-144 40L59 168Z" fill="#eee6d9"/>
+              <path d="M200 79v53" stroke="#a5b297" stroke-width="2"/>
+              <path d="m239 79 64-16v64l-64 17V79Z" fill="#f9f6e9" stroke="#91a487" stroke-width="3"/>
+              <path d="m271 71 1 65m-33-26 64-16" stroke="#91a487" stroke-width="3"/>
+              <path d="m84 88 52 10v38l-52-12V88Z" fill="#f7f2e6"/>
+              <path d="m97 117 13-16 13 22-26-6Z" fill="#bd9874"/>
+              <path d="m112 115 10-9 9 19-19-10Z" fill="#81977a"/>
+              <path d="m147 155 38 9v26l-38-10v-25Z" fill="#b78961"/>
+              <path d="m147 155 16-5 39 9-17 5-38-9Z" fill="#d1ac86"/>
+              <path d="m185 164 17-5v25l-17 6v-26Z" fill="#9a714f"/>
+              <path d="M164 155v-24" stroke="#556c4c" stroke-width="3"/>
+              <path d="M164 143c-18-1-20-12-18-17 13 0 19 7 18 17Zm0-6c-1-18 9-24 15-23 3 13-4 21-15 23Z" fill="#738b62"/>
+              <ellipse cx="274" cy="173" rx="23" ry="7" fill="#485e48"/>
+              <path d="M251 172v27c0 9 46 9 46-1v-26" fill="#f9f7ef" stroke="#485e48" stroke-width="2"/>
+              <ellipse cx="274" cy="172" rx="23" ry="7" fill="#b4c2a6" stroke="#485e48" stroke-width="2"/>
+              <path d="M255 177c-7-31 45-34 38 0" stroke="#485e48" stroke-width="2"/>
+              <path d="m262 186 25-1v9l-25 1v-9Z" fill="#d6a586"/>
+              <path d="m314 178 9-32" stroke="#9c734f" stroke-width="5" stroke-linecap="round"/>
+              <path d="m323 146 3-11-17-5 2-9" stroke="#485e48" stroke-width="3" stroke-linejoin="round"/>
+              <path d="m298 116 26 7" stroke="#d6a586" stroke-width="11" stroke-linecap="round"/>
+            </svg>
+
+            <div id="results" aria-live="polite" aria-atomic="true">
+              <div class="result-grid">
+                <div class="result-item">
+                  <p class="result-label">Paint needed</p>
+                  <p class="result-value"><span id="litres-result">4</span><span class="result-unit"> L</span></p>
+                  <p class="result-detail" id="coats-detail">For your 2 coats</p>
+                </div>
+                <div class="result-item">
+                  <p class="result-label">Whole tins to get</p>
+                  <p class="result-value" id="tins-result">2</p>
+                  <p class="result-detail" id="tin-detail">At 2.5 L each</p>
+                </div>
+              </div>
+              <p class="rounding-note" id="rounding-note" hidden></p>
+              <p class="calculation-error" id="calculation-error" hidden></p>
+            </div>
+
+            <div class="formula-card">
+              <p class="formula-title">The simple maths</p>
+              <p>Wall area × coats ÷ coverage = litres needed.</p>
+              <p>Divide by tin size, then round up to whole tins.</p>
+              <p class="allowance-note">No waste allowance added.</p>
+            </div>
+          </section>
+        </div>
+
+        <p class="storage-detail">Your plan saves automatically in this browser on this device. Keep the files in the same place.<br>Private browsing or clearing browser data can remove the saved plan.</p>
+        <noscript><p class="noscript-note">Enable JavaScript in your browser to calculate and save your plan. The starting example needs 4 L and 2 tins.</p></noscript>
+      </main>
+      <footer><span>A fresh coat starts here.</span><span>Simple maths. Room to create.</span></footer>
+    </div>
+  </body>
+</html>

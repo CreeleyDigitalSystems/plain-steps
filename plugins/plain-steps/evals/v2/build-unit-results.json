@@ -1,0 +1,85 @@
+{
+  "passed": 19,
+  "results": [
+    {
+      "name": "independently known paint arithmetic and exact displayed precision",
+      "passed": true
+    },
+    {
+      "name": "different-domain recipe scaling uses the same explicit engine",
+      "passed": true
+    },
+    {
+      "name": "invalid/blank/whole-number/range inputs report their field without mutation",
+      "passed": true
+    },
+    {
+      "name": "divide-by-zero and overflow are recoverable calculation errors",
+      "passed": true
+    },
+    {
+      "name": "code strings, prototype names, unknown variables and oversized trees are refused",
+      "passed": true
+    },
+    {
+      "name": "a fresh store makes no false save claim; write/readback and reload succeed",
+      "passed": true
+    },
+    {
+      "name": "corrupt and future-version storage stays untouched while session work continues",
+      "passed": true
+    },
+    {
+      "name": "read denial never leads to an overwrite attempt",
+      "passed": true
+    },
+    {
+      "name": "write failure retains session state and a retry succeeds when safe",
+      "passed": true
+    },
+    {
+      "name": "a completed write with failed readback reconciles without a duplicate write",
+      "passed": true
+    },
+    {
+      "name": "an ambiguous write never overwrites different competing data on retry",
+      "passed": true
+    },
+    {
+      "name": "an external deletion after an ambiguous write is never recreated by retry",
+      "passed": true
+    },
+    {
+      "name": "a clear event invalidates saved status without reacting to another storage area",
+      "passed": true
+    },
+    {
+      "name": "detected competing save is preserved rather than overwritten",
+      "passed": true
+    },
+    {
+      "name": "invalid app data is refused without changing the prior data or save",
+      "passed": true
+    },
+    {
+      "name": "unchanged save status does not repeatedly mutate a live region",
+      "passed": true
+    },
+    {
+      "name": "scaffolder generates local linked files and a valid arithmetic contract",
+      "passed": true
+    },
+    {
+      "name": "existing destinations and executable formula strings cannot replace files",
+      "passed": true
+    },
+    {
+      "name": "untrusted label text remains data in generated JavaScript",
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Pure arithmetic/state/generation checks only; no browser was opened.",
+    "Keyboard, focus, layout, screen-reader and participant behaviour remain unverified."
+  ]
+}

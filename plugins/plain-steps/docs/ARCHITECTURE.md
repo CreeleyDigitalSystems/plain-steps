@@ -1,50 +1,52 @@
-# Plain Steps architecture
+# How Plain Steps works
 
-## The result
+The person describes a goal normally. The host model selects relevant guidance, preserves the active meaning, implements the real task and checks the result. Conversation fidelity and understandable working software are equal jobs.
 
-The user describes a goal naturally. The assistant preserves its meaning, then helps produce an app whose actions the user can understand and complete. Conversation fidelity and the resulting interface are equal parts of the product.
+## Two workflows
 
-Version 0.1.0 uses portable skills and supporting source rather than a backend. There is no bundled MCP server, app binding, model API client, hook, scheduler or publisher storage. The AI host supplies the model and any authorised development tools. Model access and its costs are separate from the package.
+`keep-the-meaning` handles rough or branching requests, corrections, drafts, rewrites and incoming messages. Optional references provide a meaning inventory, correction dependency checks, a one-material-question decision and a faithful rewrite comparison. Interpretation remains a host-model task; this is not a deterministic language parser.
 
-## Two focused workflows
+`build-clear-apps` handles ordinary user-facing app creation and repair. It asks the agent to inspect existing work, carry constraints into a quiet task contract, implement the requested operation and include recovery in the first usable flow. The user does not complete another brief or activate an accessibility mode before each build.
 
-`skills/keep-the-meaning/SKILL.md` handles rough language: retain material constraints and uncertainty, apply later corrections, separate hypothetical ideas from instructions, respect stops, and ask only when missing meaning changes the next action. It should produce useful work, not require the user to approve a rewritten prompt.
+The host controls discovery and selection. A visible catalogue entry, an observed skill read, written app files and useful task completion are different observations. No always-on or every-host guarantee follows from installation.
 
-`skills/build-clear-apps/SKILL.md` handles the app journey: start from the goal, reuse an existing working implementation where appropriate, choose a small surface suited to the task, and test completion. This includes concrete labels, optional detail, accessible interaction, honest saving and recoverable errors. The user can request a denser overview or another interaction pattern.
+## Optional project defaults
 
-They may be used together or separately. The host controls discovery and activation. A skill is reusable instruction, not a deterministic parser or a permission-enforcement layer.
+`setup-plain-steps` applies only to requested setup in a chosen project. Its standard-library helper previews a generic block, checks known override precedence and can exclusively create a new standard instruction file only with a host-confirmed active source. Existing instructions need a preserving host edit; ambiguity, unsafe paths and changed files fail closed. It changes no global rules, hooks, accounts or credentials. An ordinary configured correction read both core skills in the native test; this is one observed run, not guaranteed selection.
 
-## Data and authority
+## Reusable local implementation
+
+| Resource | Useful capability | Boundary |
+|---|---|---|
+| [Native flow kit](../skills/build-clear-apps/assets/flow-kit.js) | Explicit numeric validation/calculation, guarded local state, focus/status/error helpers | No natural-language understanding, remote service or permission firewall |
+| [Flow styles](../skills/build-clear-apps/assets/flow.css) | Native controls, visible focus, density and reflow primitives | CSS source is not proof of rendered access or comprehension |
+| [Calculation scaffolder](../skills/build-clear-apps/scripts/scaffold.cjs) | New local app files from an agent-authored, validated numeric contract | Single result and bounded arithmetic; no executable formulas, multiple outputs, whole-unit rounding or non-calculation workflow |
+| [Source inspector](../scripts/audit_ui.py) | One regular HTML file's source-visible surface, labels and references | Follows no assets and runs no code; dynamic DOM, visual layout and real interaction remain unknown |
+
+The calculation flow keeps drafts through Back and validation failure, retains result-input context, supports named calculation undo and local resumption, and offers useful density/detail choices. The agent authors its [contract](../skills/build-clear-apps/references/calculation-contract.md); the user is not sent to a configuration form. Other jobs use suitable code and real integrations rather than being forced into this template.
+
+Two large start actions are an adaptable pattern. A direct form or dense list may remove unnecessary navigation. Essential controls, conditions, units, errors and save state must remain findable.
+
+## Data flow
 
 ```text
-User request + current corrections
-                  |
-                  v
-        Host model + selected skills
-                  |
-       interpreted task and constraints
-                  |
-                  v
-   Authorised tools / app source / task checks
-                  |
-                  v
-   Working result + precise verification limits
+User request and corrections
+        |
+Host model + relevant skill
+        |
+Active task constraints
+        |
+Authorised implementation / local resources
+        |
+Real operation and resulting state
+        |
+Task checks with exact remaining limits
 ```
 
-Messages stay subject to the host's data practices. There is no new publisher endpoint. Tool use follows the user's actual task and host permissions. An idea does not create authority for a build or external action. No cross-host memory or background capture is introduced.
+The package supplies no MCP server, account, model API client, hook, scheduler, telemetry, chat archive or publisher endpoint. The host supplies the model and authorised tools under its own cost/privacy rules. Tools and generated apps have their own actual data paths; guidance is not enforcement.
 
-## Representative example
+The optional scaffolder reads an explicit local JSON file and writes a new directory. The source inspector reads only one selected regular HTML file and no assets. Generated example state uses unencrypted browser storage on the device/origin, with guarded readback and explicit failure states. It is not a backup or cross-device service.
 
-The fictional packing app represents a three-night trip. Its everyday actions are **Add an item** and **Continue packing**. Detail and display density are optional. Undo supports recovery; visible status explains storage. It uses local browser storage for resumption when available. It has no account, cloud sync, reminder service, deletion flow, export or network dependency.
+## Proof of useful work
 
-The example is a reusable interaction pattern, not the plugin's AI engine. It demonstrates how reducing visible controls can coexist with useful recovery and optional detail. It must be tested with actual controls and storage behaviour before claiming it works.
-
-## Acceptance evidence
-
-Meaning tests compare baseline and candidate on the same fictional requests: number retention, exclusions, late corrections, parked hypotheticals, stop/local-only boundaries and negative cases. Evaluate retained requirements, clarification/correction counts and unsupported assumptions rather than tone alone.
-
-App checks exercise a complete task: add a valid item, recover from invalid input, mark it packed, undo, return and resume. Check keyboard order, visible focus, labels, status/error announcement, back navigation, zoom/reflow, reduced motion and alternative density/detail preferences. Record visible choices and completed work separately from source inspection.
-
-Archive validation checks the final package's manifests, YAML, contained paths, licence, references, icons and private-data absence. Host installation must then establish discovery, activation and a useful workflow. Public distribution needs independent unauthenticated readback of the actual release. Participant usability is a separate unresolved check; synthetic fixtures do not substitute for it.
-
-The research file and source-to-test matrix explain rule provenance and strength. A local pass supports only its named behaviour in the tested environment.
+[Verification](VERIFICATION.md) and the [source-to-test matrix](source-to-test.csv) distinguish source, unit/state checks, model response cases, native host selection, browser journeys, distribution identity and participant feedback. No one layer substitutes for the rest. The recorded native code results cover named tasks; browser completion and participant benefit remain open.

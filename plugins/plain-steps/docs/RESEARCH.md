@@ -4,7 +4,7 @@ Research checked 3 November 2026. This is a bounded audit of standards, primary 
 
 ## What the evidence supports
 
-Plain Steps treats preserving meaning and building an understandable app as equal jobs. Its two skills, `keep-the-meaning` and `build-clear-apps`, pair conversation guidance with reusable interface patterns and an offline packing example. There are no hooks, server, prompt capture or background worker in this package.
+Plain Steps treats preserving meaning and building an understandable app as equal jobs. Its two core skills, `keep-the-meaning` and `build-clear-apps`, pair conversation guidance with reusable interface patterns and working examples. An optional `setup-plain-steps` skill adds scoped project defaults when requested; it is not another daily intake step. There are no hooks, server, prompt capture or background worker in this package.
 
 The evidence supports clear language, predictable navigation, memory support, recoverable errors and individual control over presentation. It also warns that rewriting can suppress a person's voice, and that disability disclosure can trigger stereotypes. Use stated preferences and task needs; do not require diagnosis disclosure. [W3C cognitive accessibility guidance](https://www.w3.org/TR/coga-usable/), [autistic-user AI study](https://arxiv.org/html/2601.17946v2), [disclosure-bias study](https://arxiv.org/html/2601.12690v1).
 
@@ -74,4 +74,4 @@ Requirement-retention rate, clarification/correction count, visible decisions an
 4. **Before cross-device/assistive-technology claims:** test the exact install/selection path and example on each claimed desktop, web and mobile host, plus actual screen-reader use and narrow/zoomed layouts. A browser viewport test is not a physical-device or screen-reader test.
 5. **Later, only if useful:** expand examples and language coverage based on observed failed tasks. Revisit comparator capabilities, cost and licence facts before recommending or reusing them. Do not add capture, surveillance or persistent memory by implication.
 
-Plain Steps remains an evidence-informed candidate until its own results exist. These studies do not establish clinical efficacy, universal comprehension, every-host support or automatic WCAG certification.
+Plain Steps remains experimental. Its recorded code and fictional-case results do not substitute for browser, participant or broader effectiveness checks. These studies do not establish clinical efficacy, universal comprehension, every-host support or automatic WCAG certification.

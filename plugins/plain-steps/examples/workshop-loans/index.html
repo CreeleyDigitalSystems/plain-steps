@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#20392f">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>Workshop loan book</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="loan-book.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to loan book</a>
+  <div class="page">
+    <header class="page-header">
+      <div>
+        <h1>Workshop loan book<span aria-hidden="true">.</span></h1>
+        <p>Know what’s out. Keep a record of what’s back.</p>
+      </div>
+      <p class="save-state" id="save-state">Opening saved book…</p>
+    </header>
+    <main id="main">
+      <noscript><p class="notice">Turn on JavaScript to use the loan book. Nothing has been saved or changed.</p></noscript>
+      <div id="storage-problem" class="notice" hidden>
+        <p id="storage-error" role="alert"></p>
+        <button type="button" id="retry-storage" class="secondary">Reopen saved book</button>
+        <p class="small">Your entries in the form stay here.</p>
+      </div>
+      <div class="workspace">
+        <section class="entry-panel" aria-labelledby="entry-heading">
+          <div class="section-marker" aria-hidden="true">+</div>
+          <h2 id="entry-heading">Lend something</h2>
+          <p class="muted">Record it when it leaves the workshop.</p>
+          <form id="loan-form" novalidate>
+            <div class="field">
+              <label for="item">Item</label>
+              <input id="item" name="item" type="text" required maxlength="160" autocomplete="off" placeholder="Item name or tool number" aria-describedby="item-error">
+              <p id="item-error" class="field-error" hidden></p>
+            </div>
+            <div class="field">
+              <label for="borrower">Borrowed by</label>
+              <input id="borrower" name="borrower" type="text" required maxlength="100" autocomplete="off" placeholder="Borrower’s name" aria-describedby="borrower-error">
+              <p id="borrower-error" class="field-error" hidden></p>
+            </div>
+            <button id="record-loan" class="primary" type="submit" disabled>Record loan <span aria-hidden="true">↗</span></button>
+            <p class="form-note">Both fields are required.</p>
+          </form>
+        </section>
+        <section class="book-panel" aria-labelledby="book-heading">
+          <div class="book-header">
+            <h2 id="book-heading">The book</h2>
+            <p class="book-total" id="book-total">Opening…</p>
+          </div>
+          <div class="view-controls" role="group" aria-label="Show loans">
+            <button type="button" class="view-button" id="show-out" aria-pressed="true">Still out <span id="out-count">0</span></button>
+            <button type="button" class="view-button" id="show-returned" aria-pressed="false">Returned <span id="returned-count">0</span></button>
+          </div>
+          <div id="undo-panel" class="undo-panel" hidden>
+            <p id="undo-description"></p>
+            <button type="button" id="undo-return" class="text-button">Undo last return</button>
+          </div>
+          <div class="search-field">
+            <label for="search">Find an item or borrower</label>
+            <input id="search" type="search" autocomplete="off" placeholder="Search this view" aria-controls="loan-list">
+          </div>
+          <div class="list-heading">
+            <h3 id="list-heading" tabindex="-1">Still out</h3>
+            <p id="result-count" class="small"></p>
+          </div>
+          <ul id="loan-list" class="loan-list" aria-labelledby="list-heading"></ul>
+          <div id="empty-state" class="empty-state">
+            <span class="empty-mark" aria-hidden="true">—</span>
+            <h3 id="empty-title">Opening your book</h3>
+            <p id="empty-copy">Checking for entries saved on this device.</p>
+          </div>
+        </section>
+      </div>
+      <p id="status" class="status-message" role="status" aria-live="polite" aria-atomic="true"></p>
+    </main>
+    <footer>
+      <p><strong>Kept on this device.</strong> Use the same browser and keep this folder in place to reopen your book.</p>
+      <p>Browser storage is unencrypted and isn’t a backup. Private browsing or clearing browser data can remove your entries.</p>
+    </footer>
+  </div>
+</body>
+</html>

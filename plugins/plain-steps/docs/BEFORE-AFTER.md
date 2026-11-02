@@ -1,4 +1,6 @@
-# A representative app before and after
+# Historical 0.1 example: a representative app before and after
+
+This preserves the original 0.1 packing comparison and unmatched browser evidence. See [current verification and native acceptance](VERIFICATION.md) for later implementation, mixed skill selection and the configured correction.
 
 This compares an independently generated [baseline packing app](../evals/baseline-app/index.html), produced without the Plain Steps skills, with the [Plain Steps packing example](../examples/packing/index.html). Both address a fictional three-night packing task: add items, mark them packed and keep the list in the browser without an account or cloud service.
 

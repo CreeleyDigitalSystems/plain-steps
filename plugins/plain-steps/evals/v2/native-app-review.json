@@ -1,0 +1,144 @@
+{
+  "review_date": "2026-11-03",
+  "scope": "Independent review of two actual native-generated fictional apps against their requests and acceptance records.",
+  "verdict": "No blocking defects found within reviewed source and pure Node logic/simulated DOM scope.",
+  "state_proven": [
+    "written",
+    "tested locally with logic and simulated event wiring"
+  ],
+  "not_proven": [
+    "actual browser UI",
+    "direct-file origin/CSP behavior in intended browser",
+    "actual browser storage close/reopen",
+    "screen-reader and keyboard completion",
+    "rendered reflow/zoom/contrast",
+    "participant benefit",
+    "causal improvement attributable to plugin"
+  ],
+  "app_sources": {
+    "paint": {
+      "files": [
+        "native-candidate-paint/index.html",
+        "native-candidate-paint/styles.css",
+        "native-candidate-paint/app.js"
+      ],
+      "request": "native-build-request.txt",
+      "acceptance": "native-build-acceptance.json",
+      "required_result": {
+        "area_m2": 24,
+        "coats": 2,
+        "coverage_m2_per_litre": 12,
+        "tin_litres": 2.5,
+        "litres": 4,
+        "whole_tins": 2,
+        "purchased_litres": 5
+      }
+    },
+    "loans": {
+      "files": [
+        "native-candidate-loans/index.html",
+        "native-candidate-loans/styles.css",
+        "native-candidate-loans/app.js",
+        "native-candidate-loans/loan-book.js"
+      ],
+      "request": "native-loans-request.txt",
+      "acceptance": "native-loans-acceptance.json",
+      "required_journey": "Empty book; record Soldering iron with Morgan; mark returned; retained Returned history; undo latest return; reopen from saved readback with entry still out."
+    }
+  },
+  "author_evidence_reviewed": {
+    "paint": {
+      "source": "checks.cjs",
+      "trace_summary": {
+        "tests_passed": 24,
+        "exit_code": 0
+      },
+      "rerun": false
+    },
+    "loans": {
+      "source": "loan-book.test.cjs",
+      "trace_summary": {
+        "tests": 15,
+        "passed": 15,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "rerun": false
+    },
+    "note": "Author test source and narrowly filtered completed-command results were reviewed. The entire author suites were not rerun."
+  },
+  "independent_checks": [
+    {
+      "name": "paint corrected example equals independent arithmetic: 4 L, 2 whole tins, 5 L purchased",
+      "status": "pass"
+    },
+    {
+      "name": "loan required exact core journey starts empty, retains return, undoes and reads back saved state",
+      "status": "pass"
+    },
+    {
+      "name": "loan event handlers simulate record, return, find history, undo and new context readback with focus recovery",
+      "status": "pass"
+    },
+    {
+      "name": "loan uncertain save blocks mutation, keeps draft, focuses recovery, then reopens confirmed entry without automatic duplicate",
+      "status": "pass"
+    },
+    {
+      "name": "loan whitespace validation keeps form values and focuses missing borrower before any write",
+      "status": "pass"
+    },
+    {
+      "name": "loan special characters are text content, with no injected element creation",
+      "status": "pass"
+    },
+    {
+      "name": "both entrypoints reference existing local classic scripts and styles; source has no module fetch or network API",
+      "status": "pass"
+    }
+  ],
+  "independent_probe_kind": "pure Node logic and simulated DOM event wiring; not a browser",
+  "source_review": {
+    "runtime": "Relative existing stylesheets and classic deferred JavaScript; no module imports, fetches, external assets or runtime dependencies. No source-level module/CORS dependency identified. File-origin/CSP acceptance remains unexercised in a real browser.",
+    "paint": "Corrected defaults; all four editable fields; exact fraction whole-tin ceiling; native labelled number inputs; associated field errors; output/save live regions; visible focus and responsive CSS authored. Invalid drafts are retained locally; save success requires readback; opening an unreadable record does not overwrite it. Editing explicitly retries saving it.",
+    "loans": "Native labelled fields/buttons; text-safe element construction; active/Returned views and search; persistent one-step undo; validation preserves drafts and focuses the invalid field. Storage failures block writes, preserve displayed snapshot/draft, expose recovery and focus it. Returned button removal and undo both explicitly recover focus. Read-before-write detects observed stale state and readback is required for success.",
+    "privacy_scope": "No network, accounts, prices, due dates, messages, reminders or sharing implementation. Paint adds no waste allowance. Loans begins without sample entries. Data remains browser localStorage; it is unencrypted and clearable, and is not a backup. Simultaneous-window atomicity is not guaranteed and is documented."
+  },
+  "trace_attribution": {
+    "requests_named_skill_or_accessibility": false,
+    "paint": {
+      "plain_steps_read_observed": false,
+      "conclusion": "Do not attribute this app's quality to the candidate skill; other guidance was read."
+    },
+    "loans": {
+      "plain_steps_build_skill_read_observed": true,
+      "installed_resource_version": "0.2.0",
+      "completed_read_exit_code": 0,
+      "conclusion": "One actual native build explicitly used the installed build skill and implemented a workflow beyond the bundled examples."
+    },
+    "comparison_causal": false,
+    "raw_private_trace_context_included": false
+  },
+  "findings": [],
+  "limitations": [
+    "Simulated element/storage behavior is not actual UI or browser persistence validation.",
+    "Source inspection shows responsive and focus/error semantics but cannot establish experienced usability or accessibility.",
+    "Browser file-origin storage and CSP support vary; the intended-browser opening and close/reopen journey remain acceptance work.",
+    "Two fiction fixtures and one observed skill-use trace do not establish broad or comparative benefit."
+  ],
+  "exact_next_acceptance": "The intended user manually opens each app in the intended browser: paint changes area to 60, confirms 10 L and 4 tins, closes/reopens and confirms it persisted; loans records Soldering iron / Morgan, marks returned, finds retained history, undoes, closes/reopens and confirms it is still out. Observe keyboard focus, error recovery, narrow/zoomed layout and assistive announcements during those journeys.",
+  "browser_server_protocol_or_alternate_browser_attempted": false,
+  "source_hashes_sha256": {
+    "paint": {
+      "app.js": "445b7d8c65d931cb063edcfb0e63265b35cc818dcb53b556d1db2f2c2c91e73a",
+      "index.html": "836e147ce05032f7ceaf5b67186af82eab860d153da22ec6d7519fc340f7b1bc",
+      "styles.css": "14fbb27500936fe96a20ed22f52945ded43b0adef7b1b5e5510e3dfe7cb7d184"
+    },
+    "loans": {
+      "app.js": "5e7f9d0e51de89232cd0213d9963d68bd1750aa210c1a8db5ad6720ad55b108c",
+      "index.html": "740d0199446f892176ef525ea0dcf2bbcb9a70f3fd52731d797791ac93df61ff",
+      "loan-book.js": "c32e93ba3a0b20e2074732b7dcb54d4e20e291f95e36ceae2514115a2eca0610",
+      "styles.css": "444f8bc3110d3fab25c53ffbde275f4bd32370b984206663bac07376fea05e07"
+    }
+  }
+}

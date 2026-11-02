@@ -1,0 +1,33 @@
+{
+  "checks_passed": 6,
+  "results": [
+    {
+      "name": "initial authored visibility distinguishes hidden sections and closed/open details",
+      "passed": true
+    },
+    {
+      "name": "nested hidden attributes/inline styles stay separate from aria-hidden semantics",
+      "passed": true
+    },
+    {
+      "name": "native label, wrapping label, ARIA and image-alt name evidence is reported",
+      "passed": true
+    },
+    {
+      "name": "missing names/language/title, duplicate IDs and dangling references are concerns",
+      "passed": true
+    },
+    {
+      "name": "script content is not executed or counted; CSS and runtime behaviour stay unverified",
+      "passed": true
+    },
+    {
+      "name": "one scoped regular HTML is read; linked assets untouched; symlink/escape/size inputs rejected; CLI works",
+      "passed": true
+    }
+  ],
+  "limits": [
+    "HTML source inspection only; no browser, asset/network access or script execution.",
+    "No universal control-count threshold, usability or WCAG conformance result."
+  ]
+}

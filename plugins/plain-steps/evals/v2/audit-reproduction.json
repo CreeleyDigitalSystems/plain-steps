@@ -1,0 +1,6 @@
+{
+  "source": "audit-tests.py",
+  "fixture_groups": 6,
+  "recorded_run": "audit-results.json",
+  "public_adaptation": "Only plugin-relative SCRIPT resolution changed; syntax and resolved file existence checked. Full test results are from the prior recorded run; no browser execution."
+}

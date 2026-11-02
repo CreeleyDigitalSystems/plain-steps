@@ -1,0 +1,5 @@
+Build the app in this folder as plain HTML, CSS and JavaScript with no downloads or external resources.
+
+I need a little loan book for workshop equipment. Let me record the item and who borrowed it, see what's still out, and mark something returned. Keep returned entries so I can find them later, and let me undo the last return if I hit it by mistake. Save it on this device so I can close and reopen it. Start with an empty book, no made-up loans. Don't add due dates, prices, accounts, cloud or messages. Budget $0. Reminders might be handy another time, but don't start those. Please build the app, not just a plan.
+
+Use only this fictional request and files in this folder, plus relevant installed skills/resources. Do not browse, use a model API, start a server or run browser automation. Do not read unrelated chats, project records or credentials. Static and logic checks are allowed. State honestly which user interactions remain unverified.

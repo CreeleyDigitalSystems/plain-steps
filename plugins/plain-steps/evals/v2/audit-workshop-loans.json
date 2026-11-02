@@ -1,0 +1,157 @@
+{
+  "file": "index.html",
+  "scope": "one authored HTML file; no scripts executed or linked assets read",
+  "observations": {
+    "title": "Workshop loan book",
+    "language": "en",
+    "duplicate_ids": {},
+    "native_controls_total": 9,
+    "source_visible_native_controls": 7,
+    "source_visible_control_types": {
+      "a": 1,
+      "input": 3,
+      "button": 3
+    },
+    "source_visible_text_words": 102,
+    "controls": [
+      {
+        "tag": "a",
+        "line": 14,
+        "id": null,
+        "source_visible": true,
+        "disabled_attribute": false,
+        "aria_hidden_ancestor": false,
+        "name_evidence": {
+          "text": "Skip to loan book",
+          "sources": [
+            "element content"
+          ]
+        }
+      },
+      {
+        "tag": "button",
+        "line": 27,
+        "id": "retry-storage",
+        "source_visible": false,
+        "disabled_attribute": false,
+        "aria_hidden_ancestor": false,
+        "name_evidence": {
+          "text": "Reopen saved book",
+          "sources": [
+            "element content"
+          ]
+        }
+      },
+      {
+        "tag": "input",
+        "line": 38,
+        "id": "item",
+        "source_visible": true,
+        "disabled_attribute": false,
+        "aria_hidden_ancestor": false,
+        "name_evidence": {
+          "text": "Item",
+          "sources": [
+            "label for"
+          ]
+        }
+      },
+      {
+        "tag": "input",
+        "line": 43,
+        "id": "borrower",
+        "source_visible": true,
+        "disabled_attribute": false,
+        "aria_hidden_ancestor": false,
+        "name_evidence": {
+          "text": "Borrowed by",
+          "sources": [
+            "label for"
+          ]
+        }
+      },
+      {
+        "tag": "button",
+        "line": 46,
+        "id": "record-loan",
+        "source_visible": true,
+        "disabled_attribute": true,
+        "aria_hidden_ancestor": false,
+        "name_evidence": {
+          "text": "Record loan ↗",
+          "sources": [
+            "element content"
+          ]
+        }
+      },
+      {
+        "tag": "button",
+        "line": 56,
+        "id": "show-out",
+        "source_visible": true,
+        "disabled_attribute": false,
+        "aria_hidden_ancestor": false,
+        "name_evidence": {
+          "text": "Still out 0",
+          "sources": [
+            "element content"
+          ]
+        }
+      },
+      {
+        "tag": "button",
+        "line": 57,
+        "id": "show-returned",
+        "source_visible": true,
+        "disabled_attribute": false,
+        "aria_hidden_ancestor": false,
+        "name_evidence": {
+          "text": "Returned 0",
+          "sources": [
+            "element content"
+          ]
+        }
+      },
+      {
+        "tag": "button",
+        "line": 61,
+        "id": "undo-return",
+        "source_visible": false,
+        "disabled_attribute": false,
+        "aria_hidden_ancestor": false,
+        "name_evidence": {
+          "text": "Undo last return",
+          "sources": [
+            "element content"
+          ]
+        }
+      },
+      {
+        "tag": "input",
+        "line": 65,
+        "id": "search",
+        "source_visible": true,
+        "disabled_attribute": false,
+        "aria_hidden_ancestor": false,
+        "name_evidence": {
+          "text": "Find an item or borrower",
+          "sources": [
+            "label for"
+          ]
+        }
+      }
+    ],
+    "optional_disclosures": [],
+    "referenced_resources_by_kind": {
+      "other/local": 3
+    },
+    "asset_files_read": 0
+  },
+  "concerns": [],
+  "unverified": [
+    "CSS, script-generated or repaired browser DOM may change these source observations.",
+    "Accessible names are source evidence, not the browser's computed accessibility tree.",
+    "Keyboard/focus, layout/reflow, contrast, runtime data/requests, saving and task completion need permitted execution checks.",
+    "Control/text counts have no universal usability threshold. This report is not WCAG conformance or participant validation."
+  ]
+}

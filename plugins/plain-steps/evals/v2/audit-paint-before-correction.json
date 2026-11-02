@@ -1,0 +1,100 @@
+{
+  "file": "index.html",
+  "scope": "one authored HTML file; no scripts executed or linked assets read",
+  "observations": {
+    "title": "Paint plan — room calculator",
+    "language": "en-AU",
+    "duplicate_ids": {},
+    "native_controls_total": 5,
+    "source_visible_native_controls": 5,
+    "source_visible_control_types": {
+      "a": 1,
+      "input": 4
+    },
+    "source_visible_text_words": 155,
+    "controls": [
+      {
+        "tag": "a",
+        "line": 16,
+        "id": null,
+        "source_visible": true,
+        "disabled_attribute": false,
+        "aria_hidden_ancestor": false,
+        "name_evidence": {
+          "text": "Paint plan home",
+          "sources": [
+            "aria-label"
+          ]
+        }
+      },
+      {
+        "tag": "input",
+        "line": 45,
+        "id": "area",
+        "source_visible": true,
+        "disabled_attribute": false,
+        "aria_hidden_ancestor": false,
+        "name_evidence": {
+          "text": "Wall area",
+          "sources": [
+            "label for"
+          ]
+        }
+      },
+      {
+        "tag": "input",
+        "line": 55,
+        "id": "coats",
+        "source_visible": true,
+        "disabled_attribute": false,
+        "aria_hidden_ancestor": false,
+        "name_evidence": {
+          "text": "Number of coats",
+          "sources": [
+            "label for"
+          ]
+        }
+      },
+      {
+        "tag": "input",
+        "line": 65,
+        "id": "coverage",
+        "source_visible": true,
+        "disabled_attribute": false,
+        "aria_hidden_ancestor": false,
+        "name_evidence": {
+          "text": "Paint coverage",
+          "sources": [
+            "label for"
+          ]
+        }
+      },
+      {
+        "tag": "input",
+        "line": 75,
+        "id": "tin",
+        "source_visible": true,
+        "disabled_attribute": false,
+        "aria_hidden_ancestor": false,
+        "name_evidence": {
+          "text": "Tin size",
+          "sources": [
+            "label for"
+          ]
+        }
+      }
+    ],
+    "optional_disclosures": [],
+    "referenced_resources_by_kind": {
+      "other/local": 2
+    },
+    "asset_files_read": 0
+  },
+  "concerns": [],
+  "unverified": [
+    "CSS, script-generated or repaired browser DOM may change these source observations.",
+    "Accessible names are source evidence, not the browser's computed accessibility tree.",
+    "Keyboard/focus, layout/reflow, contrast, runtime data/requests, saving and task completion need permitted execution checks.",
+    "Control/text counts have no universal usability threshold. This report is not WCAG conformance or participant validation."
+  ]
+}
