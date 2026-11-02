@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-03",
+  "browser": "156.0.8078.79",
+  "delivery": "file URL, installed Google Chrome driven by Playwright, no server",
+  "results": [
+    {
+      "name": "home keyboard entry, exact two primary actions and clear input label",
+      "passed": true
+    },
+    {
+      "name": "empty and long errors retain text, announce and focus input; Back retains draft",
+      "passed": true
+    },
+    {
+      "name": "keyboard toggle, visible count and undo restore previous value/focus",
+      "passed": true
+    },
+    {
+      "name": "user text renders safely, without injected elements or network",
+      "passed": true
+    },
+    {
+      "name": "reload resumes saved items and persisted last-toggle undo",
+      "passed": true
+    },
+    {
+      "name": "compact preference works by keyboard and survives reload",
+      "passed": true
+    },
+    {
+      "name": "320px reflow, compact targets and enlarged text remain usable",
+      "passed": true
+    },
+    {
+      "name": "corrupt JSON is untouched while new session-only changes remain usable",
+      "passed": true
+    },
+    {
+      "name": "invalid stored schema is untouched rather than reset",
+      "passed": true
+    },
+    {
+      "name": "write failure is truthful and recoverable with successful retry/reload",
+      "passed": true
+    },
+    {
+      "name": "read denial preserves prior storage and never pretends a save succeeded",
+      "passed": true
+    },
+    {
+      "name": "detected concurrent change is never overwritten",
+      "passed": true
+    }
+  ],
+  "uncaughtErrors": [],
+  "outboundRequests": [],
+  "limitations": [
+    "Chromium only; physical devices, Safari, Firefox and real screen readers untested.",
+    "Keyboard plus DOM accessibility inspection is not a screen-reader session or usability study.",
+    "localStorage file URL behaviour varies by browser and location; saves are not a backup.",
+    "Conflict detection is best effort; no atomic multi-tab transaction is promised."
+  ]
+}

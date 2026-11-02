@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Three-night packing list</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="packing-app">
+    <header>
+      <p class="eyebrow">A little trip, a lighter head</p>
+      <h1>Three nights away.</h1>
+      <p class="intro">Add what you need. Tick it when it’s packed.</p>
+    </header>
+
+    <section class="list-card" aria-labelledby="list-heading">
+      <div class="list-heading">
+        <h2 id="list-heading">Your packing list</h2>
+        <p id="progress">0 of 0 packed</p>
+      </div>
+
+      <form id="add-form">
+        <label for="item-name">What do you need to pack?</label>
+        <div class="add-row">
+          <input id="item-name" name="item" type="text" placeholder="e.g. Phone charger" autocomplete="off" maxlength="160" required>
+          <button type="submit">Add item</button>
+        </div>
+      </form>
+
+      <p id="empty-state" class="empty-state">Your list is ready. Start with one thing.</p>
+      <ul id="packing-list" aria-label="Items to pack"></ul>
+      <p id="announcement" class="visually-hidden" role="status" aria-live="polite"></p>
+      <p id="storage-warning" class="storage-warning" role="alert" hidden></p>
+    </section>
+
+    <footer>Saved in this browser on this device. No account needed.</footer>
+  </main>
+</body>
+</html>

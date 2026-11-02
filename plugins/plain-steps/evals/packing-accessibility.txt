@@ -1,0 +1,20 @@
+- main:
+  - heading "Pack for 3 nights" [level=1]
+  - region "Your packing list":
+    - button "Back to start"
+    - heading "Your packing list" [level=2]
+    - paragraph: 0 of 3 items packed
+    - list "Items to pack":
+      - listitem:
+        - checkbox "Toothbrush"
+        - text: Toothbrush
+      - listitem:
+        - checkbox "<img src=x onerror=alert(1)>"
+        - text: <img src=x onerror=alert(1)>
+      - listitem:
+        - checkbox "Long item aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        - text: Long item aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    - button "Add an item"
+    - button "Undo last toggle" [disabled]
+  - status: Saved on this device in this browser.
+  - status: Added Long item aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.

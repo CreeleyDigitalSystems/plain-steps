@@ -1,0 +1,8 @@
+[
+{"id":"B1","request":"Build a local packing app for a weekend. Two buttons maybe. No login, no cloud, no reminders. Need add items and tick packed, save on this device. Budget $0. Actually not a weekend, three nights. Maybe later it'd be cool to invite my mate, but don't build that."},
+{"id":"B2","request":"Prior assistant planned a bright moving dashboard; user says: No animation. Keep the labels Add an item and Continue packing exactly. I said no reminders. Keep the rest and carry on."},
+{"id":"B3","request":"What if it emailed me a nudge? Just thinking. For now finish the offline packing flow; bring up the nudge idea after the packing flow works, not when I next ask for status."},
+{"id":"B4","request":"Stop the build here. Leave the files. Tell me the next unfinished check, don't run it."},
+{"id":"B5","request":"Make the packing app more understandable. I prefer dense lists and precise labels; do not put me through a profile quiz or infer a diagnosis. Need keyboard and undo."},
+{"id":"B6","request":"I have 12 items, no 21, and only 3 bags. Do not delete packed items. Keep the blue button but no flashing. Export? Maybe later. Could you finish adding an item without opening another account?"}
+]
